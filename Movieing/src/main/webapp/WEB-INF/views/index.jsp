@@ -619,7 +619,7 @@
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">login</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
+                
                 <p>로그인 할구에요</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
