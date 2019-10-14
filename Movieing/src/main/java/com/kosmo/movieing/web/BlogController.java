@@ -11,7 +11,7 @@ public class BlogController {
 	public String blogMain() {
 		
 		
-		return "BlogMain.tiles";
+		return "blog/my/BlogMain.tiles";
 	}
 	
 	
