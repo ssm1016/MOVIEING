@@ -63,7 +63,7 @@ padding-bottom: 10px;
 		};
 
 		var chart = new google.charts.Bar(document.getElementById('chart'));
-		// Convert the Classic options to Material options..
+		// Convert the Classic options to Material options...
 		chart.draw(data, google.charts.Bar.convertOptions(options));
 	};
 </script>
