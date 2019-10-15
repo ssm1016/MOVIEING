@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>movielist(genre)</title>
+<title>movielist(genre.jsp)</title>
 <style>
   /* 사이드바 래퍼 스타일 */
   
