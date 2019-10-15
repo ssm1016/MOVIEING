@@ -29,11 +29,15 @@ body {
 .actorSpan{
 font-size:1.2em;
 font-weight: bold;
+line-height: 65px;
+
 
 }
-
+.filmoSpan{
+line-height: 65px;
+}
 .actorForm{
-padding-bottom: 10px;
+padding-bottom: 20px;;
 }
 
 </style>
@@ -210,24 +214,41 @@ padding-bottom: 10px;
 				<div class="row actorForm" >
 					<div class="col-sm-3"><img class="radiusImg" alt="배우사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
 					<div class="col-sm-6" ><span class="actorSpan" >염정아</span></div>
-					<div class="col-sm-3" >25편</div>
+					<div class="col-sm-3" ><span class="filmoSpan" >25편</span></div>
 				</div>
 				<div class="row actorForm" >
 					<div class="col-sm-3"><img class="radiusImg" alt="배우사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
 					<div class="col-sm-6" ><span class="actorSpan" >김선아</span></div>
-					<div class="col-sm-3" >25편</div>
+					<div class="col-sm-3" ><span class="filmoSpan" >25편</span></div>
 				</div>
 				<div class="row actorForm"  >
 					<div class="col-sm-3"><img class="radiusImg" alt="배우사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
 					<div class="col-sm-6" ><span class="actorSpan" >손예진</span></div>
-					<div class="col-sm-3" >25편</div>
+					<div class="col-sm-3" ><span class="filmoSpan" >25편</span></div>
 				</div>
 				<hr class="my-3">
 				<h5>선호감독</h5>
-				##여기에 선호감독...##
+				<div class="row actorForm" >
+					<div class="col-sm-3"><img class="radiusImg" alt="감독사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
+					<div class="col-sm-6" ><span class="actorSpan" >염정아</span></div>
+					<div class="col-sm-3" ><span class="filmoSpan" >25편</span></div>
+				</div>
+				<div class="row actorForm" >
+					<div class="col-sm-3"><img class="radiusImg" alt="감독사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
+					<div class="col-sm-6" ><span class="actorSpan" >김선아</span></div>
+					<div class="col-sm-3" ><span class="filmoSpan" >25편</span></div>
+				</div>
+				<div class="row actorForm"  >
+					<div class="col-sm-3"><img class="radiusImg" alt="감독사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
+					<div class="col-sm-6" ><span class="actorSpan" >손예진</span></div>
+					<div class="col-sm-3" ><span class="filmoSpan" >25편</span></div>
+				</div>
 				<hr class="my-3">
 				<h5>선호장르</h5>
-				##여기에 선호장르...##
+				<p align="center" style="font-size: 0.8em">
+					<em>영화에서 주로 반전과 공포를 찾는 사람</em>
+				</p>
+				
 				<hr class="my-3">
 				<h5>영화감상시간</h5>
 				<h6 align="center" style="color: #db147b">1046시간</h6>
