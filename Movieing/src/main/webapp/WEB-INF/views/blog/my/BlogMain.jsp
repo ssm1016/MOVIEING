@@ -96,7 +96,12 @@ padding-bottom: 10px;
 							</div>
 						</div>
 						<br>
-						<button type="button" class="btn btn-danger">무빙프렌즈</button>
+						<!--  
+						<button type="button" class="btn btn-danger" onclick='<c:url value="/Movieing/Blog/MovindFriends.mov"/>'>무빙프렌즈</button>
+						-->
+						<a class="btn btn-danger" href="<c:url value='/Movieing/Blog/MovieingFriends.mov'/>">무빙프렌즈</a>
+
+
 					</div>
 					<!-- 프로필 활동내역 -->
 					<div class="col-sm-9">

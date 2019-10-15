@@ -14,7 +14,11 @@ public class BlogController {
 		return "blog/my/BlogMain.tiles";
 	}
 	
-	
+	//무빙프렌즈
+	@RequestMapping("/Movieing/Blog/MovieingFriends.mov")
+	public String blogFriends() {
+		return "blog/my/MovieingFriends.tiles";
+	}
 	
 	
 	
