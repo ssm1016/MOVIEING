@@ -11,8 +11,62 @@ body {
 	width: 120px;
 	height: 180px;
 }
+
+/* 원형이미지들 */
+.radiusImg{
+    width: 65px;
+    height: 65px;
+    /* background-image:url("배경이미지경로"); */
+    border-radius: 150px; /* 레이어 반크기만큼 반경을 잡기*/    
+    display: table-cell;
+    vertical-align: middle;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 배우감독이름 스팬 */
+.actorSpan{
+font-size:1.2em;
+font-weight: bold;
+
+}
+
+.actorForm{
+padding-bottom: 10px;
+}
+
 </style>
 
+<script type="text/javascript"
+	src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+	google.charts.load('current', {
+		'packages' : [ 'bar' ]
+	});
+	google.charts.setOnLoadCallback(drawStuff);
+
+	function drawStuff() {
+		var data = new google.visualization.arrayToDataTable([ [ '', '' ],
+				[ "0", 15 ], [ "", 1 ], [ "1", 12 ], [ "", 10 ], [ '2', 3 ],
+				[ '', 20 ], [ '3', 7 ], [ '', 3 ], [ '4', 15 ], [ '', 5 ],
+				[ '5', 2 ] ]);
+
+		var options = {
+			width : 270,
+			legend : {
+				position : 'none'
+			},
+			bar : {
+				groupWidth : "90%"
+			}
+		};
+
+		var chart = new google.charts.Bar(document.getElementById('chart'));
+		// Convert the Classic options to Material options...
+		chart.draw(data, google.charts.Bar.convertOptions(options));
+	};
+</script>
 
 
 <div class="container">
@@ -132,6 +186,7 @@ body {
 			style="border-left-width: 1px; border-left-style: solid; border-left-color: #a8a5a5"></div>
 		<!-- 여기서부터 오른쪽 취향분석 -->
 		<div class="col-sm-4 col-sm-offset-1 blog-sidebar">
+
 			<div class="sidebar-module sidebar-module-inset"
 				style="padding-top: 60px">
 				<h3 align="center">홍길동님의 취향은?</h3>
@@ -145,13 +200,28 @@ body {
 				<p align="center" style="font-size: 0.8em">
 					<em>별점이 한결같은 소나무 타입</em>
 				</p>
-				##여기에 별점막대그래프...##
+				<div id="chart"
+					style="width: 500px; height: 170px; padding-left: 50px"></div>
 				<hr class="my-3">
 				<h5>선호태그</h5>
 				##여기에 선호태그들...##
 				<hr class="my-3">
 				<h5>선호배우</h5>
-				##여기에 선호배우...##
+				<div class="row actorForm" >
+					<div class="col-sm-3"><img class="radiusImg" alt="배우사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
+					<div class="col-sm-6" ><span class="actorSpan" >염정아</span></div>
+					<div class="col-sm-3" >25편</div>
+				</div>
+				<div class="row actorForm" >
+					<div class="col-sm-3"><img class="radiusImg" alt="배우사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
+					<div class="col-sm-6" ><span class="actorSpan" >김선아</span></div>
+					<div class="col-sm-3" >25편</div>
+				</div>
+				<div class="row actorForm"  >
+					<div class="col-sm-3"><img class="radiusImg" alt="배우사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
+					<div class="col-sm-6" ><span class="actorSpan" >손예진</span></div>
+					<div class="col-sm-3" >25편</div>
+				</div>
 				<hr class="my-3">
 				<h5>선호감독</h5>
 				##여기에 선호감독...##
@@ -175,5 +245,4 @@ body {
 
 </div>
 <!-- /.container -->
-
 
