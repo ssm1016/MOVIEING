@@ -21,7 +21,7 @@
             <a class="nav-link js-scroll-trigger" href="#portfolio">평가</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">추천</a>
+            <a class="nav-link js-scroll-trigger" href="<c:url value='/Movieing/Movie/Recommend.mov'/>">추천</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="<c:url value='/Movieing/Blog/BlogMain.mov'/>">블로그</a>	
