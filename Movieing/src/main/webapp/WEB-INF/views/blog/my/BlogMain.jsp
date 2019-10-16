@@ -33,12 +33,24 @@ line-height: 65px;
 
 
 }
+
+/* 필모그램 스팬 */
 .filmoSpan{
 line-height: 65px;
 }
+
+/* 배우 스팬 */
 .actorForm{
 padding-bottom: 20px;;
 }
+
+.genreSpan{
+color:#37C2AD;
+font-weight: bold;
+font-size: 1.2em;
+
+}
+
 
 </style>
 
@@ -248,6 +260,11 @@ padding-bottom: 20px;;
 				<p align="center" style="font-size: 0.8em">
 					<em>영화에서 주로 반전과 공포를 찾는 사람</em>
 				</p>
+				<div class="row" align="center" style="padding-left: 30px;padding-right: 30px">
+					<div class="col-md-4"><a href="#"><span class="genreSpan">스릴러</span></a></div>
+					<div class="col-md-4"><a href="#"><span class="genreSpan">공포</span></a></div>
+					<div class="col-md-4"><a href="#"><span class="genreSpan">액션</span></a></div>
+				</div>
 				
 				<hr class="my-3">
 				<h5>영화감상시간</h5>
