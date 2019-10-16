@@ -1,11 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>movielist(genre.jsp)</title>
+
 <style>
   /* 사이드바 래퍼 스타일 */
   
@@ -21,7 +17,7 @@
     background: #000;
     overflow-x: hidden;
     overflow-y: auto;
-    margin-top: 40px;
+    margin-top: 100px;
   }
   
   #page-content-wrapper {
@@ -67,7 +63,7 @@
   
     <ul class="sidebar-nav">
       <li class="sidebar-brand">
-        <a href="#">영화</a>
+        <span style="font-weight: bold;color:white;" >영화.</span>
       </li>
       <li><a href="#">랜덤 영화</a></li>
       <li><a href="#">역대 100만관객돌파 영화</a></li>
@@ -101,15 +97,83 @@
 
   <!-- 본문 -->
   <div id="page-content-wrapper">
-    <div class="container-fluid">
-      
-      <h2>최신 인기 장르</h2>
-    	
-    </div>
-  </div>
+    <div class="container-fluid" style="margin-top: 110px">
+      <div class="row">
+		<a class="btn btn-default">최신</a>
+		<a class="btn btn-default">인기</a>
+		
+		<a class="btn btn-danger">장르</a>
+	</div>
+    	<div class="row" style="margin-top: 20px" >
+		<div class="col-md-2 col-sm-6 movie-poster">
+		 <img class="movie"  src="http://placehold.it/230x300"  alt=""/>
+    	</div> 
+    	<div class="col-md-2 col-sm-6 movie-poster">
+		 <img class="movie"  src="http://placehold.it/230x300"  alt=""/>
+    	</div> 
+    	<div class="col-md-2 col-sm-6 movie-poster">
+		 <img class="movie"  src="http://placehold.it/230x300"  alt=""/>
+    	</div> 
+    	<div class="col-md-2 col-sm-6 movie-poster">
+		 <img class="movie"  src="http://placehold.it/230x300"  alt=""/>
+    	</div> 
+    	<div class="col-md-2 col-sm-6 movie-poster">
+		 <img class="movie"  src="http://placehold.it/230x300"  alt=""/>
+    	</div> 
+    	<div class="col-md-2 col-sm-6 movie-poster">
+		 <img class="movie"  src="http://placehold.it/230x300"  alt=""/>
+    	</div> 
+  	</div>
+  	
+  	<div class="row" style="margin-top: 20px" >
+		<div class="col-md-2 col-sm-6 movie-poster">
+		 <img class="movie1"  src="http://placehold.it/230x300"  alt=""/>
+    	</div>
+    	<div class="col-md-2 col-sm-6 movie-poster">
+		 <img class="movie1"  src="http://placehold.it/230x300"  alt=""/>
+    	</div> 
+    	<div class="col-md-2 col-sm-6 movie-poster">
+		 <img class="movie1"  src="http://placehold.it/230x300"  alt=""/>
+    	</div>  
+    	<div class="col-md-2 col-sm-6 movie-poster">
+		 <img class="movie1"  src="http://placehold.it/230x300"  alt=""/>
+    	</div> 
+    	<div class="col-md-2 col-sm-6 movie-poster">
+		 <img class="movie1"  src="http://placehold.it/230x300"  alt=""/>
+    	</div> 
+    	<div class="col-md-2 col-sm-6 movie-poster">
+		 <img class="movie1"  src="http://placehold.it/230x300"  alt=""/>
+    	</div> 
+    
+  	</div>
+  	
+  	<div class="row" style="margin-top: 20px" >
+		<div class="col-md-2 col-sm-6 movie-poster">
+		 <img class="movie2"  src="http://placehold.it/230x300"  alt=""/>
+    	</div>
+    	<div class="col-md-2 col-sm-6 movie-poster">
+		 <img class="movie2"  src="http://placehold.it/230x300"  alt=""/>
+    	</div> 
+    	<div class="col-md-2 col-sm-6 movie-poster">
+		 <img class="movie2"  src="http://placehold.it/230x300"  alt=""/>
+    	</div>  
+    	<div class="col-md-2 col-sm-6 movie-poster">
+		 <img class="movie2"  src="http://placehold.it/230x300"  alt=""/>
+    	</div> 
+    	<div class="col-md-2 col-sm-6 movie-poster">
+		 <img class="movie2"  src="http://placehold.it/230x300"  alt=""/>
+    	</div> 
+    	<div class="col-md-2 col-sm-6 movie-poster">
+		 <img class="movie2"  src="http://placehold.it/230x300"  alt=""/>
+    	</div> 
+    
+  	</div>
+  	
+  
+  
   <!-- /본문 -->
- 	<div>
- 	 <img class="movie"  src="http://placehold.it/200x300"  alt=""/>
+ 	<!-- <div style="margin-top: 60px"> -->
+ 	<!--  <img class="movie"  src="http://placehold.it/200x300"  alt=""/>
  	 <img class="movie1"  src="http://placehold.it/200x300"  alt=""/>
  	 <img class="movie2"  src="http://placehold.it/200x300"  alt=""/>
  	 <img class="movie3"  src="http://placehold.it/200x300"  alt=""/>
@@ -130,7 +194,7 @@
  	 <img class="movie18"  src="http://placehold.it/200x300"  alt=""/>
  	 <img class="movie19"  src="http://placehold.it/200x300"  alt=""/>
  	 <img class="movie20"  src="http://placehold.it/200x300"  alt=""/>
- 	
+ 	 -->
  	
  	</div>
 </div>
