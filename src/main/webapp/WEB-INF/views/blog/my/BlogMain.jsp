@@ -280,7 +280,7 @@ font-size: 1.2em;
 
 </div>
 
-<!-- /.container -->
+<!-- /.container --->
 <div class="modal" id="followModal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
