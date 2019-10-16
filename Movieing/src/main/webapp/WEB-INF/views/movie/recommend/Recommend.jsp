@@ -21,7 +21,7 @@
 <div>
 
 <div class="card text-white bg-dark mb-3" style="max-width: 10rem; margin-top: 150px">
-  <div class="card-header">추천인기영화</div>
+  <div class="card-header">추천인기영화.</div>
 	
 	</div>
   <div class="wrap" style="margin-top: 20px">
