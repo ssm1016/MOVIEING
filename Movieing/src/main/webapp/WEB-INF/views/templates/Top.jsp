@@ -5,7 +5,7 @@
 <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color:#002941">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="<c:url value='/'/>" ><img alt="logo" src="<c:url value='/resources/img/logos/logo.png'/>"/></a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img alt="logo" src="<c:url value='/resources/img/logos/logo.png'/>"/></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -21,7 +21,7 @@
             <a class="nav-link js-scroll-trigger" href="#portfolio">평가</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">추천</a>
+            <a class="nav-link js-scroll-trigger" href="<c:url value='/Movieing/Movie/Recommend.mov'/>">추천</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="<c:url value='/Movieing/Blog/BlogMain.mov'/>">블로그</a>	
