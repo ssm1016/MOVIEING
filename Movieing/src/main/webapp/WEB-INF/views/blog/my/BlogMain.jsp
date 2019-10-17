@@ -6,12 +6,10 @@
 body {
 	padding-top: 100px;
 }
-
 .movieImage {
 	width: 120px;
 	height: 180px;
 }
-
 /* 원형이미지들 */
 .radiusImg{
     width: 65px;
@@ -24,18 +22,25 @@ body {
     font-weight: bold;
     text-align: center;
 }
-
 /* 배우감독이름 스팬 */
 .actorSpan{
 font-size:1.2em;
 font-weight: bold;
-
+line-height: 65px;
 }
-
+/* 필모그램 스팬 */
+.filmoSpan{
+line-height: 65px;
+}
+/* 배우 스팬 */
 .actorForm{
-padding-bottom: 10px;
+padding-bottom: 20px;;
 }
-
+.genreSpan{
+color:#37C2AD;
+font-weight: bold;
+font-size: 1.2em;
+}
 </style>
 
 <script type="text/javascript"
@@ -45,13 +50,11 @@ padding-bottom: 10px;
 		'packages' : [ 'bar' ]
 	});
 	google.charts.setOnLoadCallback(drawStuff);
-
 	function drawStuff() {
 		var data = new google.visualization.arrayToDataTable([ [ '', '' ],
 				[ "0", 15 ], [ "", 1 ], [ "1", 12 ], [ "", 10 ], [ '2', 3 ],
 				[ '', 20 ], [ '3', 7 ], [ '', 3 ], [ '4', 15 ], [ '', 5 ],
 				[ '5', 2 ] ]);
-
 		var options = {
 			width : 270,
 			legend : {
@@ -61,7 +64,6 @@ padding-bottom: 10px;
 				groupWidth : "90%"
 			}
 		};
-
 		var chart = new google.charts.Bar(document.getElementById('chart'));
 		// Convert the Classic options to Material options.
 		chart.draw(data, google.charts.Bar.convertOptions(options));
@@ -85,7 +87,7 @@ padding-bottom: 10px;
 						<h5 style="padding-top: 20px">Road-dong</h5>
 						<div class="row">
 							<div class="col-sm-6">
-								<a href="#"><span
+								<a href="#followModal" data-toggle="modal" ><span
 									style="font-weight: bold; color: black; font-size: 0.9em">팔로워
 										25 </span></a>
 							</div>
@@ -210,24 +212,45 @@ padding-bottom: 10px;
 				<div class="row actorForm" >
 					<div class="col-sm-3"><img class="radiusImg" alt="배우사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
 					<div class="col-sm-6" ><span class="actorSpan" >염정아</span></div>
-					<div class="col-sm-3" >25편</div>
+					<div class="col-sm-3" ><span class="filmoSpan">25편</span></div>
 				</div>
 				<div class="row actorForm" >
 					<div class="col-sm-3"><img class="radiusImg" alt="배우사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
 					<div class="col-sm-6" ><span class="actorSpan" >김선아</span></div>
-					<div class="col-sm-3" >25편</div>
+					<div class="col-sm-3" ><span class="filmoSpan">25편</span></div>
 				</div>
 				<div class="row actorForm"  >
 					<div class="col-sm-3"><img class="radiusImg" alt="배우사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
 					<div class="col-sm-6" ><span class="actorSpan" >손예진</span></div>
-					<div class="col-sm-3" >25편</div>
+					<div class="col-sm-3" ><span class="filmoSpan">25편</span></div>
 				</div>
 				<hr class="my-3">
 				<h5>선호감독</h5>
-				##여기에 선호감독...##
+				<div class="row actorForm" >
+					<div class="col-sm-3"><img class="radiusImg" alt="감독사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
+					<div class="col-sm-6" ><span class="actorSpan" >염정아</span></div>
+					<div class="col-sm-3" ><span class="filmoSpan" >25편</span></div>
+				</div>
+				<div class="row actorForm" >
+					<div class="col-sm-3"><img class="radiusImg" alt="감독사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
+					<div class="col-sm-6" ><span class="actorSpan" >김선아</span></div>
+					<div class="col-sm-3" ><span class="filmoSpan" >25편</span></div>
+				</div>
+				<div class="row actorForm"  >
+					<div class="col-sm-3"><img class="radiusImg" alt="감독사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
+					<div class="col-sm-6" ><span class="actorSpan" >손예진</span></div>
+					<div class="col-sm-3" ><span class="filmoSpan" >25편</span></div>
+				</div>
 				<hr class="my-3">
 				<h5>선호장르</h5>
-				##여기에 선호장르...##
+				<p align="center" style="font-size: 0.8em">
+					<em>영화에서 주로 반전과 공포를 찾는 사람</em>
+				</p>
+				<div class="row" align="center" style="padding-left: 30px;padding-right: 30px">
+					<div class="col-md-4"><a href="#"><span class="genreSpan">스릴러</span></a></div>
+					<div class="col-md-4"><a href="#"><span class="genreSpan">공포</span></a></div>
+					<div class="col-md-4"><a href="#"><span class="genreSpan">액션</span></a></div>
+				</div>
 				<hr class="my-3">
 				<h5>영화감상시간</h5>
 				<h6 align="center" style="color: #db147b">1046시간</h6>
@@ -244,5 +267,30 @@ padding-bottom: 10px;
 	<!-- /.row -->
 
 </div>
-<!-- /.container -->
 
+<!-- /.container ---->
+<div class="modal" id="followModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* $('#followModal').modal({
+	
+}); */
+</script>
