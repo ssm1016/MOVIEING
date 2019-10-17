@@ -20,26 +20,26 @@
 
 <div>
 
-<div class="card text-white bg-dark mb-3" style="max-width: 10rem; margin-top: 150px">
-  <div class="card-header">추천인기영화.</div>
+<div class="card text-white bg-dark mb-3" style="max-width: 10rem; margin-top: 150px;margin-left:20px">
+  <div class="card-header">추천인기영화</div>
 	
 	</div>
   <div class="wrap" style="margin-top: 20px">
  
-      <img class="movie1"  src="http://placehold.it/200x200"  alt=""/>
-      <img class="movie1"  src="http://placehold.it/200x200"  alt=""/>
-      <img class="movie1"  src="http://placehold.it/200x200"  alt=""/>
-      <img class="movie1"  src="http://placehold.it/200x200"  alt=""/>
-      <img class="movie1"  src="http://placehold.it/200x200"  alt=""/>
-      <img class="movie1"  src="http://placehold.it/200x200"  alt=""/>
-      <img class="movie1"  src="http://placehold.it/200x200"  alt=""/>
-      <img class="movie1"  src="http://placehold.it/200x200"  alt=""/>
-      <img class="movie1"  src="http://placehold.it/200x200"  alt=""/>
-      <img class="movie1"  src="http://placehold.it/200x200"  alt=""/>
+      <img class="movie1"  src="<c:url value='/resources/img/movie/mo.jpg'/>"  alt=""/>
+      <img class="movie1"  src="<c:url value='/resources/img/movie/aladdin.jpg'/>"  alt=""/>
+      <img class="movie1"  src="<c:url value='/resources/img/movie/blood.jpg'/>"  alt=""/>
+      <img class="movie1"  src="<c:url value='/resources/img/movie/end.jpg'/>"  alt=""/>
+      <img class="movie1"  src="<c:url value='/resources/img/movie/exit.jpg'/>"  alt=""/>
+      <img class="movie1"  src="<c:url value='/resources/img/movie/gemini.jpg'/>"  alt=""/>
+      <img class="movie1"  src="<c:url value='/resources/img/movie/gostop.jpg'/>"  alt=""/>
+      <img class="movie1"  src="<c:url value='/resources/img/movie/joker.jpg'/>"  alt=""/>
+      <img class="movie1"  src="<c:url value='/resources/img/movie/jang.jpg'/>"  alt=""/>
+      <img class="movie1"  src="<c:url value='/resources/img/movie/ki.jpg'/>"  alt=""/>
       
   </div>
   
-  <div class="card text-white bg-dark mb-3" style="max-width: 10rem;margin-top: 50px">
+  <div class="card text-white bg-dark mb-3" style="max-width: 10rem;margin-top: 50px;margin-left:20px ">
   <div class="card-header">취향분석영화</div>
 	</div>
    <div class="wrap" style="margin-top: 20px">
@@ -56,7 +56,7 @@
       
   </div>
   	
-  	<div class="card text-white bg-dark mb-3" style="max-width: 10rem;margin-top: 50px">
+  	<div class="card text-white bg-dark mb-3" style="max-width: 10rem;margin-top: 50px;margin-left:20px">
   	<div class="card-header">색다른영화</div>
 	</div>
    <div class="wrap" style="margin-top: 20px">
