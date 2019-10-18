@@ -26,6 +26,14 @@ body {
 	text-align: center;
 }
 /* 배우감독이름 스팬 */
+<<<<<<< HEAD
+.actorSpan{
+font-size:1.2em;
+font-weight: bold;
+line-height: 65px;
+
+
+=======
 .actorSpan {
 	font-size: 1.2em;
 	font-weight: bold;
@@ -38,16 +46,37 @@ body {
 /* 배우 스팬 */
 .actorForm {
 	padding-bottom: 20px;;
+>>>>>>> branch 'master' of https://github.com/ohhhhhjy/MOVIEING.git
 }
 
+<<<<<<< HEAD
+/* 필모그램 스팬 */
+.filmoSpan{
+line-height: 65px;
+}
+
+/* 배우 스팬 */
+.actorForm{
+padding-bottom: 20px;;
+=======
 .genreSpan {
 	color: #37C2AD;
 	font-weight: bold;
 	font-size: 1.2em;
+>>>>>>> branch 'master' of https://github.com/ohhhhhjy/MOVIEING.git
 }
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
+.genreSpan{
+color:#37C2AD;
+font-weight: bold;
+font-size: 1.2em;
+
+}
+=======
+>>>>>>> branch 'master' of https://github.com/ohhhhhjy/MOVIEING.git
 
 
 >>>>>>> branch 'master' of https://github.com/ohhhhhjy/MOVIEING.git
@@ -75,7 +104,7 @@ body {
 			}
 		};
 		var chart = new google.charts.Bar(document.getElementById('chart'));
-		// Convert the Classic options to Material options.
+		// Convert the Classic options to Material options...
 		chart.draw(data, google.charts.Bar.convertOptions(options));
 	};
 </script>
@@ -220,6 +249,12 @@ body {
 				##여기에 선호태그들...##
 				<hr class="my-3">
 				<h5>선호배우</h5>
+<<<<<<< HEAD
+				<div class="row actorForm" >
+					<div class="col-sm-3"><img class="radiusImg" alt="배우사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
+					<div class="col-sm-6" ><span class="actorSpan" >염정아</span></div>
+					<div class="col-sm-3" ><span class="filmoSpan" >25편</span></div>
+=======
 				<div class="row actorForm">
 					<div class="col-sm-3">
 						<img class="radiusImg" alt="배우사진"
@@ -231,7 +266,14 @@ body {
 					<div class="col-sm-3">
 						<span class="filmoSpan">25편</span>
 					</div>
+>>>>>>> branch 'master' of https://github.com/ohhhhhjy/MOVIEING.git
 				</div>
+<<<<<<< HEAD
+				<div class="row actorForm" >
+					<div class="col-sm-3"><img class="radiusImg" alt="배우사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
+					<div class="col-sm-6" ><span class="actorSpan" >김선아</span></div>
+					<div class="col-sm-3" ><span class="filmoSpan" >25편</span></div>
+=======
 				<div class="row actorForm">
 					<div class="col-sm-3">
 						<img class="radiusImg" alt="배우사진"
@@ -243,7 +285,14 @@ body {
 					<div class="col-sm-3">
 						<span class="filmoSpan">25편</span>
 					</div>
+>>>>>>> branch 'master' of https://github.com/ohhhhhjy/MOVIEING.git
 				</div>
+<<<<<<< HEAD
+				<div class="row actorForm"  >
+					<div class="col-sm-3"><img class="radiusImg" alt="배우사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
+					<div class="col-sm-6" ><span class="actorSpan" >손예진</span></div>
+					<div class="col-sm-3" ><span class="filmoSpan" >25편</span></div>
+=======
 				<div class="row actorForm">
 					<div class="col-sm-3">
 						<img class="radiusImg" alt="배우사진"
@@ -255,9 +304,26 @@ body {
 					<div class="col-sm-3">
 						<span class="filmoSpan">25편</span>
 					</div>
+>>>>>>> branch 'master' of https://github.com/ohhhhhjy/MOVIEING.git
 				</div>
 				<hr class="my-3">
 				<h5>선호감독</h5>
+<<<<<<< HEAD
+				<div class="row actorForm" >
+					<div class="col-sm-3"><img class="radiusImg" alt="감독사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
+					<div class="col-sm-6" ><span class="actorSpan" >염정아</span></div>
+					<div class="col-sm-3" ><span class="filmoSpan" >25편</span></div>
+				</div>
+				<div class="row actorForm" >
+					<div class="col-sm-3"><img class="radiusImg" alt="감독사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
+					<div class="col-sm-6" ><span class="actorSpan" >김선아</span></div>
+					<div class="col-sm-3" ><span class="filmoSpan" >25편</span></div>
+				</div>
+				<div class="row actorForm"  >
+					<div class="col-sm-3"><img class="radiusImg" alt="감독사진" src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>"/></div>
+					<div class="col-sm-6" ><span class="actorSpan" >손예진</span></div>
+					<div class="col-sm-3" ><span class="filmoSpan" >25편</span></div>
+=======
 				<div class="row actorForm">
 					<div class="col-sm-3">
 						<img class="radiusImg" alt="감독사진"
@@ -293,12 +359,21 @@ body {
 					<div class="col-sm-3">
 						<span class="filmoSpan">25편</span>
 					</div>
+>>>>>>> branch 'master' of https://github.com/ohhhhhjy/MOVIEING.git
 				</div>
 				<hr class="my-3">
 				<h5>선호장르</h5>
 				<p align="center" style="font-size: 0.8em">
 					<em>영화에서 주로 반전과 공포를 찾는 사람</em>
 				</p>
+<<<<<<< HEAD
+				<div class="row" align="center" style="padding-left: 30px;padding-right: 30px">
+					<div class="col-md-4"><a href="#"><span class="genreSpan">스릴러</span></a></div>
+					<div class="col-md-4"><a href="#"><span class="genreSpan">공포</span></a></div>
+					<div class="col-md-4"><a href="#"><span class="genreSpan">액션</span></a></div>
+				</div>
+				
+=======
 				<div class="row" align="center"
 					style="padding-left: 30px; padding-right: 30px">
 					<div class="col-md-4">
@@ -311,6 +386,7 @@ body {
 						<a href="#"><span class="genreSpan">액션</span></a>
 					</div>
 				</div>
+>>>>>>> branch 'master' of https://github.com/ohhhhhjy/MOVIEING.git
 				<hr class="my-3">
 				<h5>영화감상시간</h5>
 				<h6 align="center" style="color: #db147b">1046시간</h6>

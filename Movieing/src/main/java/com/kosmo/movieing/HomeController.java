@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-	
 
 	@GetMapping("/")
 	public String index(HttpServletRequest request) {

@@ -63,7 +63,7 @@
   
     <ul class="sidebar-nav">
       <li class="sidebar-brand">
-        <span style="font-weight: bold;color:white;" >영화.</span>
+        <span style="font-weight: bold;color:white;" >영화</span>
       </li>
       <li><a href="#">랜덤 영화</a></li>
       <li><a href="#">역대 100만관객돌파 영화</a></li>
@@ -102,7 +102,7 @@
 		<a class="btn btn-default">최신</a>
 		<a class="btn btn-default">인기</a>
 		
-		<a class="btn btn-danger">장르</a>
+		<a class="btn btn-primary">장르</a>
 	</div>
     	<div class="row" style="margin-top: 20px" >
 		<div class="col-md-2 col-sm-6 movie-poster">
