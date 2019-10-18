@@ -19,6 +19,50 @@
        width:200px;
        height:100%;
    }
+   
+   .cuadro_intro_hover{
+    	padding: 0px;
+		position: relative;
+		overflow: hidden;
+		height: 200px;
+	}
+	.cuadro_intro_hover:hover .caption{
+		opacity: 1;
+		transform: translateY(-150px);
+		-webkit-transform:translateY(-150px);
+		-moz-transform:translateY(-150px);
+		-ms-transform:translateY(-150px);
+		-o-transform:translateY(-150px);
+	}
+	.cuadro_intro_hover img{
+		z-index: 4;
+	}
+	.cuadro_intro_hover .caption{
+		position: absolute;
+		top:150px;
+		-webkit-transition:all 0.3s ease-in-out;
+		-moz-transition:all 0.3s ease-in-out;
+		-o-transition:all 0.3s ease-in-out;
+		-ms-transition:all 0.3s ease-in-out;
+		transition:all 0.3s ease-in-out;
+		width: 100%;
+	}
+	.cuadro_intro_hover .blur{
+		background-color: rgba(0,0,0,0.7);
+		height: 300px;
+		z-index: 5;
+		position: absolute;
+		width: 100%;
+	}
+	.cuadro_intro_hover .caption-text{
+		z-index: 10;
+		color: #fff;
+		position: absolute;
+		height: 300px;
+		text-align: center;
+		top:-20px;
+		width: 100%;
+	}
  
 		
  </style>
@@ -28,12 +72,29 @@
 <div class="card text-white bg-dark mb-3" style="max-width: 10rem; margin-top:100px;margin-left:150px">
   <div class="card-header">추천인기영화</div>
    <a href="<c:url value='/Movieing/Movie/AllMovie.mov'/>" class="card-link" style="float:none; margin:0 auto">더보기></a>
-  <%--  <div class="card-footer bg-transparent border-success" href="<c:url value='/Movieing/Movie/AllMovie.mov'/>">더보기></div> --%>
+  
 	</div>
 	
   <div class="wrap" style="margin-top: 20px">
- 	
-      <img class="movie1"  src="<c:url value='/resources/img/movie/mo.jpg'/>"  alt=""/>
+
+
+		<div class="cuadro_intro_hover " style="background-color: #cccccc;">
+			<p style="text-align: center; margin-top: 20px;">
+				<img class="movie1"  src="<c:url value='/resources/img/movie/mo.jpg'/>"  alt=""/>
+			</p>
+			<div class="caption">
+				<div class="blur"></div>
+				<div class="caption-text">
+					<h3
+						style="border-top: 2px solid white; border-bottom: 2px solid white; padding: 10px;">THIS
+						IS H3</h3>
+					<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+					<a class=" btn btn-default" href="http://trovacamporella.com"><span
+						class="glyphicon glyphicon-plus"> INFO</span></a>
+				</div>
+			</div>
+		</div>
+		<img class="movie1"  src="<c:url value='/resources/img/movie/mo.jpg'/>"  alt=""/>
       <img class="movie1"  src="<c:url value='/resources/img/movie/aladdin.jpg'/>"  alt=""/>
       <img class="movie1"  src="<c:url value='/resources/img/movie/blood.jpg'/>"  alt=""/>
       <img class="movie1"  src="<c:url value='/resources/img/movie/end.jpg'/>"  alt=""/>
