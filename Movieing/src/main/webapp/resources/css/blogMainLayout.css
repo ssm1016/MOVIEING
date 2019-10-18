@@ -1,0 +1,64 @@
+@charset "UTF-8";
+body {
+	padding-top: 100px;
+}
+
+.movieImage {
+	width: 120px;
+	height: 180px;
+}
+/* 원형이미지들 */
+.radiusImg {
+	width: 65px;
+	height: 65px;
+	/* background-image:url("배경이미지경로"); */
+	border-radius: 150px; /* 레이어 반크기만큼 반경을 잡기*/
+	display: table-cell;
+	vertical-align: middle;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+}
+/* 배우감독이름 스팬 */
+.actorSpan {
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height: 65px;
+}
+
+/* 필모그램 스팬 */
+.filmoSpan {
+	line-height: 65px;
+}
+
+/* 배우 스팬 */
+.actorForm {
+	padding-bottom: 20px;;
+}
+
+/* 장르스팬 */
+.genreSpan {
+	color: #37C2AD;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+/* 스위치스타일 */
+.custom-switch {
+	align-content: center;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 45px;
+}
+
+/* 팔로우팔로잉 평가코멘트갯수 스팬 */
+.followSpan{
+	font-size: 0.8em;
+	color:#a8a5a5
+}
+
+.followForm{
+padding-left: 50px;padding-right: 30px;
+}
