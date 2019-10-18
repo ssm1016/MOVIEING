@@ -8,15 +8,15 @@
 <div class="container" style="margin-top: 130px;">
 
 	<div class="row">
-		<a class="btn btn-default">최신.</a>
-		<a class="btn btn-default">인기</a>
+		<a class="btn btn-default"  href="<c:url value='/Movieing/Movie/NewMovie.mov'/>">최신</a>
+		<a class="btn btn-default"  href="<c:url value='/Movieing/Movie/Popular.mov'/>">인기</a>
 		
 		<a class="btn btn-default" href="<c:url value='/Movieing/Movie/Genre.mov'/>">장르</a>
 	</div>
 
 	<div class="row">
 		<div class="col-md-2 col-sm-6 movie-poster">
-			<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+			<a class="portfolio-link" href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
 		
             <img width="185" height="278"
 				src="<c:url value='/resources/img/movie/movie1.jpg'/>"
@@ -26,7 +26,7 @@
 		</div>
 
 		<div class="col-md-2 col-sm-6 movie-poster">
-			<a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+			<a class="portfolio-link" href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
 
 				<img width="185" height="278"
 				src="<c:url value='/resources/img/movie/movie2.jpg'/>"

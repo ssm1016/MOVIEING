@@ -86,6 +86,17 @@ nav {
 	display: inline;
 	overflow-y: scroll;
 }
+
+.timeLineText {
+	font-size: 0.5em;
+}
+
+/*타임라인 줄*/
+.my-3 {
+	border: 0;
+	height: 2px;
+	background: #ccc;
+}
 </style>
 
 
@@ -185,10 +196,10 @@ nav {
 >>>>>>> branch 'master' of https://github.com/MyeongJi94/MOVIEING.git
 										</div>
 										<div class="col-sm-9">
-											<h4 class="card-title">조커(Joker)</h4>
+											<h4 class="card-title" style="color: black;">조커(Joker)</h4>
 											<span class="badge badge-pill badge-danger">★4.5</span>
-											<p class="card-text">조커를 봤다. 너무 재밌었다. 너무 재밌었고, 너무 재밌어서 너무
-												재밌을 뻔했다. 너무 재밌는 영화였다.</p>
+											<p class="card-text" style="color: black;">조커를 봤다. 너무
+												재밌었다. 너무 재밌었고, 너무 재밌어서 너무 재밌을 뻔했다. 너무 재밌는 영화였다.</p>
 										</div>
 									</div>
 								</div>
@@ -264,16 +275,28 @@ nav {
 							src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
 					</div>
 					<div class="col-sm-6">
-						<span class="actorSpan" style="font-size: 1.5em">Road_dong</span>
-						<h6 class="actorSpan" style="font-size: 0.9em">길동이</h6>
+						<span class="actorSpan" style="font-size: 1.5em; color: black;">Road_dong</span>
+						<h6 class="actorSpan" style="font-size: 0.9em; color: black;">길동이</h6>
+
+					</div>
+
+					<div style="align-content: center;">
+						<button type="button" class="btn btn-primary"
+							style="width: 80px; height: 35px">글쓰기</button>
 					</div>
 <<<<<<< HEAD
+
 
 
 				</div>
 
 
+				<div style="padding-top: 60px"></div>
+
+
+
 				<!-- 타임라인 -->
+<<<<<<< HEAD
 				<div style="padding: 10px">
 					<h5>타임라인</h5>
 					<div class="wrap">
@@ -310,8 +333,104 @@ nav {
 						</ul>
 >>>>>>> branch 'master' of https://github.com/MyeongJi94/MOVIEING.git
 					</div>
+=======
+				<div class="col-sm-4 col-sm-offset-1 blog-sidebar">
+>>>>>>> branch 'master' of https://github.com/ohhhhhjy/MOVIEING.git
 
+					<div class="row">
+
+						<h5></h5>
+						<div class="row actorForm">
+							<div class="col-sm-3">
+								<img
+									src="<c:url value='/resources/img/friends/alarm-clock.png'/>"
+									alt="타임라인 로고" style="width: 25px; height: 25px" />
+							</div>
+							<div class="col-sm-9">
+								<h6 style="color: black;">타임라인</h6>
+							</div>
+
+						</div>
+
+						<!-- 중간줄 -->
+						<hr class="my-3">
+
+
+
+
+
+						<div class="row actorForm" style="padding-bottom: 20px">
+
+							<div class="col-sm-3" style="padding-right: 30px">
+								<img class="radiusSmallImg" alt="배우사진"
+									src="<c:url value='/resources/img/friends/boy.png'/>" />
+							</div>
+							<div class="col-sm-6">
+								<span class="timeLineText"
+									style="font-size: 1.0em; color: black;">__mongjiee</span>
+								<h6 class="actorSpan" style="font-size: 0.5em; color: black;">1시간전</h6>
+
+							</div>
+						</div>
+
+						<div class="row actorForm" style="padding-bottom: 30px">
+							<div class="col-sm-3">
+								<img class="radiusSmallImg" alt="배우사진"
+									src="<c:url value='/resources/img/friends/boy(1).png'/>" />
+							</div>
+							<div class="col-sm-6">
+								<span class="timeLineText"
+									style="font-size: 1.0em; color: black;">__mongjiee</span>
+								<h6 class="actorSpan" style="font-size: 0.5em; color: black;">2시간전</h6>
+
+							</div>
+						</div>
+
+						<div class="row actorForm" style="padding-bottom: 30px">
+							<div class="col-sm-3">
+								<img class="radiusSmallImg" alt="배우사진"
+									src="<c:url value='/resources/img/friends/girl.png'/>" />
+							</div>
+							<div class="col-sm-6">
+								<span class="timeLineText"
+									style="font-size: 1.0em; color: black;">light_hj</span>
+								<h6 class="actorSpan" style="font-size: 0.5em; color: black;">3시간전</h6>
+
+							</div>
+						</div>
+
+						<div class="row actorForm" style="padding-bottom: 30px">
+							<div class="col-sm-3">
+								<img class="radiusSmallImg" alt="배우사진"
+									src="<c:url value='/resources/img/friends/man.png'/>" />
+							</div>
+							<div class="col-sm-6">
+								<span class="timeLineText"
+									style="font-size: 1.0em; color: black;">dragon_stone</span>
+								<h6 class="actorSpan" style="font-size: 0.5em; color: black;">4시간전</h6>
+
+							</div>
+						</div>
+
+						<div class="row actorForm" style="padding-bottom: 30px">
+							<div class="col-sm-3">
+								<img class="radiusSmallImg" alt="배우사진"
+									src="<c:url value='/resources/img/friends/man(1).png'/>" />
+							</div>
+							<div class="col-sm-6">
+								<span class="timeLineText"
+									style="font-size: 1.0em; color: black;">ssuminxx_</span>
+								<h6 class="actorSpan" style="font-size: 0.5em; color: black;">5시간전</h6>
+
+							</div>
+						</div>
+
+
+						<!-- 여기전까지 작성 -->
+					</div>
 				</div>
+				<!-- 타임라인끝 -->
+
 
 
 				<!-- 여기가 두번째 창안까지 작성 -->

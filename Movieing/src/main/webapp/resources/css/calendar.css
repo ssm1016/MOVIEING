@@ -1,0 +1,61 @@
+ul li {
+	list-style: none;
+}
+.calendar-modal .modal-content h5 {
+  margin-bottom: 15px;
+}
+
+.calendar-modal .modal-content p {
+  margin-bottom: 30px;
+}
+
+.calendar-modal .modal-content p.item-intro {
+  font-size: 13px;
+ /*  margin: 20px 0 30px; */
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+
+.calendar-modal .modal-content img {
+  margin-bottom: 10px;
+}
+
+.calendar-modal .modal-content button {
+  cursor: pointer;
+}
+ 
+ 
+.calendar-modal .close-modal {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.calendar-modal .close-modal:hover {
+  opacity: 0.3;
+}
+
+.calendar-modal .close-modal .lr {
+  /* Safari and Chrome */
+  z-index: 1051;
+  width: 1px;
+  height: 30px;
+  margin-left: 35px;
+  /* IE 9 */
+  transform: rotate(45deg);
+  background-color: #002941;
+}
+
+.calendar-modal .close-modal .lr .rl {
+  /* Safari and Chrome */
+  z-index: 1052;
+  width: 1px;
+  height: 30px;
+  /* IE 9 */
+  transform: rotate(90deg);
+  background-color: #002941;
+}

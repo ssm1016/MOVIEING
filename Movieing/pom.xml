@@ -189,7 +189,8 @@
 			<artifactId>spring-security-taglibs</artifactId>
 			<version>4.2.8.RELEASE</version>
 		</dependency>
-		        
+	
+				        
 	</dependencies>
 	
 	
@@ -230,6 +231,10 @@
                     <mainClass>org.test.int1.Main</mainClass>
                 </configuration>
             </plugin>
+          
+          
+          
+            
         </plugins>
     </build>
 </project>
