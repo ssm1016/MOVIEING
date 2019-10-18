@@ -8,8 +8,6 @@ public class MovieController {
 
 	@RequestMapping("/Movieing/Movie/AllMovie.mov")
 	public String movieMain() {
-		
-		
 		return "movie/list/AllMovie.tiles";
 	}
 	@RequestMapping("/Movieing/Movie/MovieDetails.mov")
@@ -23,5 +21,12 @@ public class MovieController {
 	public String movieGenre() {
 		return "movie/list/Genre.tiles";
 	}
-	
+	@RequestMapping("/Movieing/Movie/NewMovie.mov")
+	public String movieNew() {
+		return "movie/list/NewMovie.tiles";
+	}
+	@RequestMapping("/Movieing/Movie/Popular.mov")
+	public String moviePopular() {
+		return "movie/list/Popular.tiles";
+	}
 }

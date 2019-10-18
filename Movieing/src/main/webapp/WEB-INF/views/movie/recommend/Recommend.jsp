@@ -18,9 +18,9 @@
    .wrap img{
        width:200px;
        height:100%;
-   }
- 
-		
+    
+   
+}
  </style>
 
 <div>
@@ -28,12 +28,16 @@
 <div class="card text-white bg-dark mb-3" style="max-width: 10rem; margin-top:100px;margin-left:150px">
   <div class="card-header">추천인기영화</div>
    <a href="<c:url value='/Movieing/Movie/AllMovie.mov'/>" class="card-link" style="float:none; margin:0 auto">더보기></a>
-  <%--  <div class="card-footer bg-transparent border-success" href="<c:url value='/Movieing/Movie/AllMovie.mov'/>">더보기></div> --%>
+ 
 	</div>
 	
+
+</div>  
+	  
+</div>
   <div class="wrap" style="margin-top: 20px">
  	
-      <img class="movie1"  src="<c:url value='/resources/img/movie/mo.jpg'/>"  alt=""/>
+ 	   <img class="movie1"  src="<c:url value='/resources/img/movie/mo.jpg'/>"  alt=""/>
       <img class="movie1"  src="<c:url value='/resources/img/movie/aladdin.jpg'/>"  alt=""/>
       <img class="movie1"  src="<c:url value='/resources/img/movie/blood.jpg'/>"  alt=""/>
       <img class="movie1"  src="<c:url value='/resources/img/movie/end.jpg'/>"  alt=""/>
