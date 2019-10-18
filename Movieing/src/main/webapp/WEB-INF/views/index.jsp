@@ -9,8 +9,7 @@
 
 
 <body id="page-top">
-	<%-- <jsp:include page="/WEB-INF/views/templates/Top.jsp"/> --%>
- 
+	
  
   <!-- Header -->
   <header class="masthead">
@@ -214,12 +213,7 @@
     
       <div class="modal-content">
       
-     <!--  <div class="modal header">
-      <div class=""></div>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div> -->
+     
       <div class="close-modal" data-dismiss="modal">
           <div class="lr">
             <div class="rl"></div>
