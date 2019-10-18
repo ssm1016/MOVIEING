@@ -16,7 +16,7 @@
 
 	<div class="row">
 		<div class="col-md-2 col-sm-6 movie-poster">
-			<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+			<a class="portfolio-link" href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
 		
             <img width="185" height="278"
 				src="<c:url value='/resources/img/movie/movie1.jpg'/>"
@@ -26,7 +26,7 @@
 		</div>
 
 		<div class="col-md-2 col-sm-6 movie-poster">
-			<a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+			<a class="portfolio-link" href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
 
 				<img width="185" height="278"
 				src="<c:url value='/resources/img/movie/movie2.jpg'/>"
