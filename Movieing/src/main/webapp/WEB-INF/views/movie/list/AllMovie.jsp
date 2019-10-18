@@ -8,8 +8,8 @@
 <div class="container" style="margin-top: 130px;">
 
 	<div class="row">
-		<a class="btn btn-default">최신</a>
-		<a class="btn btn-default">인기</a>
+		<a class="btn btn-default"  href="<c:url value='/Movieing/Movie/NewMovie.mov'/>">최신</a>
+		<a class="btn btn-default"  href="<c:url value='/Movieing/Movie/Popular.mov'/>">인기</a>
 		
 		<a class="btn btn-default" href="<c:url value='/Movieing/Movie/Genre.mov'/>">장르</a>
 	</div>
