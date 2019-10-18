@@ -27,7 +27,7 @@ v<%@ page language="java" contentType="text/html; charset=UTF-8"
             <a class="nav-link js-scroll-trigger" href="<c:url value='/Movieing/Blog/BlogMain.mov'/>">블로그</a>   
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">소식</a>
+            <a class="nav-link js-scroll-trigger" href="<c:url value ='/Movieing/News/News.mov'/>">소식</a>
           </li>
         </ul>
         <ul class="navbar-nav text-uppercase ml-auto">
