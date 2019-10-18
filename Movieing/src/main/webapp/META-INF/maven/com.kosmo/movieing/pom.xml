@@ -189,27 +189,7 @@
 			<artifactId>spring-security-taglibs</artifactId>
 			<version>4.2.8.RELEASE</version>
 		</dependency>
-		
-		<!-- 191017 지윤 구글 API -->
-	 <dependency>
-            <groupId>com.google.api-client</groupId>
-            <artifactId>google-api-client</artifactId>
-            <version>1.22.0</version>
-        </dependency>
- 
-        <dependency>
-            <groupId>com.google.oauth-client</groupId>
-            <artifactId>google-oauth-client-jetty</artifactId>
-            <version>1.22.0</version>
-        </dependency>
- 
-        <dependency>
-            <groupId>com.google.apis</groupId>
-            <artifactId>google-api-services-calendar</artifactId>
-            <version>v3-rev235-1.22.0</version>
-        </dependency>
-
-		
+	
 				        
 	</dependencies>
 	
@@ -251,13 +231,9 @@
                     <mainClass>org.test.int1.Main</mainClass>
                 </configuration>
             </plugin>
-            
-            <!-- 191017 지윤 구글 API -->
-            <plugin>
-    <groupId>com.google.cloud.tools</groupId>
-    <artifactId>endpoints-framework-maven-plugin</artifactId>
-    <version>1.0.0</version>
-</plugin>
+          
+          
+          
             
         </plugins>
     </build>
