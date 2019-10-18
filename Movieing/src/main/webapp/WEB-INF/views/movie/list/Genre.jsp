@@ -102,7 +102,7 @@
 		<a class="btn btn-default">최신</a>
 		<a class="btn btn-default">인기</a>
 		
-		<a class="btn btn-danger">장르</a>
+		<a class="btn btn-primary">장르</a>
 	</div>
     	<div class="row" style="margin-top: 20px" >
 		<div class="col-md-2 col-sm-6 movie-poster">
