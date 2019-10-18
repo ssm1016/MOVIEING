@@ -45,6 +45,12 @@ body {
 	font-weight: bold;
 	font-size: 1.2em;
 }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> branch 'master' of https://github.com/ohhhhhjy/MOVIEING.git
 </style>
 
 <script type="text/javascript"

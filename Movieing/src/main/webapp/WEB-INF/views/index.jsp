@@ -41,7 +41,11 @@
             <i class="fas fa-video fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">영화 정보 보기</h4>
-          <p class="text-muted">최신 영화부터 고전 영화까지! 카테고리별로 영화를 검색할 수 있어요. VOD 가격까지 알려드릴게요.</p>
+          <p class="text-muted">
+          	최신 영화부터 고전 영화까지!<br/>
+          	카테고리별로 영화를 검색할 수 있어요.<br/>
+          	VOD 가격까지 알려드릴게요.
+          </p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -49,7 +53,11 @@
             <i class="fas fa-search fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">취향저격 영화 찾기</h4>
-          <p class="text-muted">어떤 영화가 있는지 궁금하신가요? 무빙은 당신의 취향을 분석해 새로운 영화를 추천해드립니다. </p>
+          <p class="text-muted">
+          	어떤 영화가 있는지 궁금하신가요?  <br/>
+          	무빙은 당신의 취향을 분석해  <br/>
+          	새로운 영화를 추천해드립니다. 
+          </p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -57,117 +65,24 @@
             <i class="fas fa-home fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">블로그</h4>
-          <p class="text-muted">이제 취향을 아셨으니 같은 취향의 친구들과 만나볼까요? 무빙에서는 다른 사용자들과 소통할 수 있어요.</p>
+          <p class="text-muted">
+          	이제 취향을 아셨으니  <br/>
+          	같은 취향의 친구들과 만나볼까요?  <br/>
+          	무빙에서는 다른 이용자분들과 소통할 수 있어요.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio Grid -->
-  <section class="bg-light page-section" id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Portfolio</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="<c:url value='/resources/img/portfolio/01-thumbnail.jpg'/>"  alt=""/>
-          </a>
-          <div class="portfolio-caption">
-            <h4>Threads</h4>
-            <p class="text-muted">Illustration</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="<c:url value='/resources/img/portfolio/02-thumbnail.jpg'/>" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Explore</h4>
-            <p class="text-muted">Graphic Design</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="<c:url value='/resources/img/portfolio/03-thumbnail.jpg'/>" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Finish</h4>
-            <p class="text-muted">Identity</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src='<c:url value="/resources/img/portfolio/04-thumbnail.jpg"/>' alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Lines</h4>
-            <p class="text-muted">Branding</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="<c:url value='/resources/img/portfolio/05-thumbnail.jpg'/>" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Southwest</h4>
-            <p class="text-muted">Website Design</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="<c:url value='/resources/img/portfolio/06-thumbnail.jpg'/>" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Window</h4>
-            <p class="text-muted">Photography</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+ 
   <!-- About -->
   <section class="page-section" id="about">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">About</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted">무빙의 서비스 한눈에 보기!</h3>
         </div>
       </div>
       <div class="row">
@@ -179,11 +94,14 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>2009-2011</h4>
-                  <h4 class="subheading">Our Humble Beginnings</h4>
+                  <h4 class="subheading">전체영화</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p class="text-muted">
+                  	이 곳에서는 전체적인 영화 목록을 보여드려요. <br/>
+                  	장르나 테마 별, 인기 순 등으로도 볼 수 있어요. <br/>
+                  	상세보기에서는 VOD가격까지 알려준답니다.  <br/>
+                  </p>
                 </div>
               </div>
             </li>
@@ -193,11 +111,16 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>March 2011</h4>
-                  <h4 class="subheading">An Agency is Born</h4>
+                  <h4 class="subheading">평가 및 추천</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p class="text-muted">
+                  	이 곳에서는 여러 영화들을 평가하고 <br/>
+                  	취향에 맞는 콘텐츠를 <br/>
+                  	추천받는 곳이예요.<br/>
+                  	평가만 하시면 <br/>
+                  	취향분석은 무빙에게 맡겨주세요! <br/>
+                  </p>
                 </div>
               </div>
             </li>
@@ -207,11 +130,16 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>December 2012</h4>
-                  <h4 class="subheading">Transition to Full Service</h4>
+                  <h4 class="subheading">블로그</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p class="text-muted">
+                  	그 동안 본 영화들을 <br/>
+                  	기록하는 공간이예요. <br/>
+                  	자신의 기록 뿐만 아니라 <br/>
+                  	다른 사람의 기록들도 볼 수 있어서 <br/>
+                  	같은 취향의 사람들과 소통할 수 있어요.<br/>
+                  </p>
                 </div>
               </div>
             </li>
@@ -221,19 +149,21 @@
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>July 2014</h4>
-                  <h4 class="subheading">Phase Two Expansion</h4>
+                  <h4 class="subheading">소식</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p class="text-muted">
+                  	혹시 영화제에 관심이 있으신가요? <br/>
+                  	무빙에서는 각종 영화제 소식까지 알려드려요. <br/>
+                  	페이지 내 캘린더를 확인해보세요! <br/>
+                  </p>
                 </div>
               </div>
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <h4>Be Part
-                  <br>Of Our
-                  <br>Story!</h4>
+              	<br/>
+                <h4>MOVI<span style="color:#e4288c">E</span>ING</h4>
               </div>
             </li>
           </ul>
@@ -241,36 +171,6 @@
       </div>
     </div>
   </section>
-
-
-  <!-- Clients -->
-  <section class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
 
   <!--Modals -->
 

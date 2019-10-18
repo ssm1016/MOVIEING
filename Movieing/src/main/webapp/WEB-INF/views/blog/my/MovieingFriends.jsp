@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -12,6 +13,7 @@
 
 <link href="<c:url value='/resources/css/friendsLayout.css'/>"
 	rel="stylesheet" type="text/css">
+
 
 
 
@@ -34,7 +36,64 @@ nav {
 	height: 100px
 }
 
+.movieImage {
+	width: 120px;
+	height: 180px;
+}
 
+/* 원형이미지들 */
+.radiusImg {
+	width: 65px;
+	height: 65px;
+	/* background-image:url("배경이미지경로"); */
+	border-radius: 150px; /* 레이어 반크기만큼 반경을 잡기*/
+	display: table-cell;
+	vertical-align: middle;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+}
+
+.radiusSmallImg {
+	width: 45px;
+	height: 45px;
+	/* background-image:url("배경이미지경로"); */
+	border-radius: 150px; /* 레이어 반크기만큼 반경을 잡기*/
+	display: table-cell;
+	vertical-align: middle;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* 배우감독이름 스팬 */
+.actorSpan {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.actorForm {
+	padding-bottom: 10px;
+}
+
+/*스크롤바*/
+.wrap {
+	width: 300px;
+	height: 100px;
+	display: inline;
+	overflow-y: scroll;
+}
+
+.timeLineText {
+	font-size: 0.5em;
+}
+
+/*타임라인 줄*/
+.my-3 {
+	border: 0;
+	height: 2px;
+	background: #ccc;
+}
 </style>
 
 
@@ -49,23 +108,27 @@ nav {
 
 	<div class="row" style="padding-top: 20px">
 
-		<!-- 탑바 (선택2개)-링크로 넘어가기 -->
+		<div>
+			<button type="button" class="btn btn-secondary">◁ 블로그 메인</button>
+			<!-- 탑바 (선택2개)-링크로 넘어가기 -->
 
-		<ul class="nav nav-tabs">
-			<li class="nav-item" style="width: 665px; text-align: center;">
-				<a class="nav-link" data-toggle="tab" href="#home">팔로우 유저들의 활동로그
-			</a>
-			</li>
-			<li class="nav-item" style="width: 380px; text-align: center;">
-				<a class="nav-link active" data-toggle="tab" href="#profile">모든
-					활동 로그</a>
-			</li>
-		</ul>
+			<ul class="nav nav-tabs">
 
-
+				<li class="nav-item" style="width: 665px; text-align: center;">
+					<a class="nav-link" data-toggle="tab" href="#home">팔로우 유저들의
+						활동로그 </a>
+				</li>
+				<li class="nav-item" style="width: 380px; text-align: center;">
+					<a class="nav-link active" data-toggle="tab" href="#profile">모든
+						활동 로그</a>
+				</li>
+			</ul>
+		</div>
 		<!-- 위에 줄긋기 -->
+
 		<div
 			style="border-bottom-width: 1px; border-bottom-style: solid; border-left-color: #a8a5a5"></div>
+
 
 
 		<!-- 팔로우 유저들의 활동로그 -->
@@ -101,20 +164,32 @@ nav {
 												alt="User"></a>
 										</div>
 										<div class="media-body">
-											<p class="m-0">Benjamin Robinson</p>
+											<p class="m-0">__mongjiee</p>
 											<small><span><i class="icon ion-md-pin"></i>
-													Nairobi, Kenya</span></small> <small><span><i
-													class="icon ion-md-time"></i> 10 hours ago</span></small>
+													Anyang, South Korea</span></small> <small><span><i
+													class="icon ion-md-time"></i> 10 시간 전</span></small>
 										</div>
 									</div>
 									<!--/ media -->
 								</div>
 								<!--/ cardbox-heading -->
 
-								<div class="cardbox-item">
-									<img class="img-fluid"
-										src="http://www.themashabrand.com/templates/bootsnipp/post/assets/img/1.jpg"
-										alt="Image">
+								<div class="card-body">
+									<div class="row">
+
+										<div class="col-sm-3" align="center">
+											<img class="img-fluid"
+												src="<c:url value="/resources/img/friends/pic1.jpg"/>"
+												alt="Image"
+												style="padding-left: 1.2em; width: 250px; height: 100px">
+										</div>
+										<div class="col-sm-9">
+											<h4 class="card-title" style="color: black;">조커(Joker)</h4>
+											<span class="badge badge-pill badge-danger">★4.5</span>
+											<p class="card-text" style="color: black;">조커를 봤다. 너무
+												재밌었다. 너무 재밌었고, 너무 재밌어서 너무 재밌을 뻔했다. 너무 재밌는 영화였다.</p>
+										</div>
+									</div>
 								</div>
 								<!--/ cardbox-item -->
 								<div class="cardbox-base">
@@ -138,7 +213,7 @@ nav {
 										<li><a href="#"><img
 												src="http://www.themashabrand.com/templates/bootsnipp/post/assets/img/users/2.jpg"
 												class="img-fluid rounded-circle" alt="User"></a></li>
-										<li><a><span>242 Likes</span></a></li>
+										<li><a><span>좋아요 242개</span></a></li>
 									</ul>
 								</div>
 								<!--/ cardbox-base -->
@@ -149,9 +224,9 @@ nav {
 											alt="..."></a>
 									</span>
 									<div class="search">
-										<input placeholder="Write a comment" type="text">
+										<input placeholder="댓글 달기..." type="text">
 										<button>
-											<i class="fa fa-camera"></i>
+											<h6>게시</h6>
 										</button>
 									</div>
 									<!--/. Search -->
@@ -175,32 +250,144 @@ nav {
 		<div
 			style="border-left-width: 1px; border-left-style: solid; border-left-color: #a8a5a5"></div>
 
-		<!--팔로우/팔로잉 리스트 보이기-->
-		<!-- 
-			<div style="padding: 10px; width: 33%;">
-			
-			<img width="60" height="60" alt="user"	src="<c:url value='/resources/img/user.png'/>" />
-			
 
+		<div class="col-sm-4 col-sm-offset-1 blog-sidebar">
+
+			<div class="sidebar-module sidebar-module-inset"
+				style="padding-top: 30px">
+
+				<h5></h5>
+				<div class="row actorForm">
+					<div class="col-sm-3">
+						<img class="radiusImg" alt="프사진"
+							src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
+					</div>
+					<div class="col-sm-6">
+						<span class="actorSpan" style="font-size: 1.5em; color: black;">Road_dong</span>
+						<h6 class="actorSpan" style="font-size: 0.9em; color: black;">길동이</h6>
+
+					</div>
+
+					<div style="align-content: center;">
+						<button type="button" class="btn btn-primary"
+							style="width: 80px; height: 35px">글쓰기</button>
+					</div>
+
+
+
+				</div>
+
+
+				<div style="padding-top: 60px"></div>
+
+
+
+				<!-- 타임라인 -->
+				<div class="col-sm-4 col-sm-offset-1 blog-sidebar">
+
+					<div class="row">
+
+						<h5></h5>
+						<div class="row actorForm">
+							<div class="col-sm-3">
+								<img
+									src="<c:url value='/resources/img/friends/alarm-clock.png'/>"
+									alt="타임라인 로고" style="width: 25px; height: 25px" />
+							</div>
+							<div class="col-sm-9">
+								<h6 style="color: black;">타임라인</h6>
+							</div>
+
+						</div>
+
+						<!-- 중간줄 -->
+						<hr class="my-3">
+
+
+
+
+
+						<div class="row actorForm" style="padding-bottom: 20px">
+
+							<div class="col-sm-3" style="padding-right: 30px">
+								<img class="radiusSmallImg" alt="배우사진"
+									src="<c:url value='/resources/img/friends/boy.png'/>" />
+							</div>
+							<div class="col-sm-6">
+								<span class="timeLineText"
+									style="font-size: 1.0em; color: black;">__mongjiee</span>
+								<h6 class="actorSpan" style="font-size: 0.5em; color: black;">1시간전</h6>
+
+							</div>
+						</div>
+
+						<div class="row actorForm" style="padding-bottom: 30px">
+							<div class="col-sm-3">
+								<img class="radiusSmallImg" alt="배우사진"
+									src="<c:url value='/resources/img/friends/boy(1).png'/>" />
+							</div>
+							<div class="col-sm-6">
+								<span class="timeLineText"
+									style="font-size: 1.0em; color: black;">__mongjiee</span>
+								<h6 class="actorSpan" style="font-size: 0.5em; color: black;">2시간전</h6>
+
+							</div>
+						</div>
+
+						<div class="row actorForm" style="padding-bottom: 30px">
+							<div class="col-sm-3">
+								<img class="radiusSmallImg" alt="배우사진"
+									src="<c:url value='/resources/img/friends/girl.png'/>" />
+							</div>
+							<div class="col-sm-6">
+								<span class="timeLineText"
+									style="font-size: 1.0em; color: black;">light_hj</span>
+								<h6 class="actorSpan" style="font-size: 0.5em; color: black;">3시간전</h6>
+
+							</div>
+						</div>
+
+						<div class="row actorForm" style="padding-bottom: 30px">
+							<div class="col-sm-3">
+								<img class="radiusSmallImg" alt="배우사진"
+									src="<c:url value='/resources/img/friends/man.png'/>" />
+							</div>
+							<div class="col-sm-6">
+								<span class="timeLineText"
+									style="font-size: 1.0em; color: black;">dragon_stone</span>
+								<h6 class="actorSpan" style="font-size: 0.5em; color: black;">4시간전</h6>
+
+							</div>
+						</div>
+
+						<div class="row actorForm" style="padding-bottom: 30px">
+							<div class="col-sm-3">
+								<img class="radiusSmallImg" alt="배우사진"
+									src="<c:url value='/resources/img/friends/man(1).png'/>" />
+							</div>
+							<div class="col-sm-6">
+								<span class="timeLineText"
+									style="font-size: 1.0em; color: black;">ssuminxx_</span>
+								<h6 class="actorSpan" style="font-size: 0.5em; color: black;">5시간전</h6>
+
+							</div>
+						</div>
+
+
+						<!-- 여기전까지 작성 -->
+					</div>
+				</div>
+				<!-- 타임라인끝 -->
+
+
+
+				<!-- 여기가 두번째 창안까지 작성 -->
 			</div>
-		-->
-		
-	
-		<div class="row panel" style="margin-top: 20px; margin-bottom: 20px;">
-		
-        <div class="col-md-8  col-xs-12">
-          <img width="60" height="60" alt="user" src="<c:url value='/resources/img/user.png'/>" />
-           
-           <div class="header">
-               
-                <h4>Road_dong</h4>
-                <span>길동이</span>
-           </div>
-        </div>
-   
-    </div>   
-		
-		
+
+		</div>
+
+
+
 
 
 	</div>
