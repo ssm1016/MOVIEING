@@ -44,12 +44,15 @@ line-height: 65px;
 padding-bottom: 20px;;
 }
 
+<<<<<<< HEAD
 .genreSpan{
 color:#37C2AD;
 font-weight: bold;
 font-size: 1.2em;
 
 }
+=======
+>>>>>>> branch 'master' of https://github.com/ohhhhhjy/MOVIEING.git
 
 
 </style>
