@@ -88,7 +88,7 @@
        <li><a href="#">SF</a></li>
        <li><a href="#">애니메이션</a></li>
        <li><a href="#">다큐멘터리</a></li>
-       <li><a href="#">다큐멘터리</a></li>
+
       
        
     </ul>
@@ -99,10 +99,10 @@
   <div id="page-content-wrapper">
     <div class="container-fluid" style="margin-top: 110px">
       <div class="row">
-		<a class="btn btn-default">최신</a>
-		<a class="btn btn-default">인기</a>
+		<a class="btn btn-default" href="<c:url value='/Movieing/Movie/NewMovie.mov'/>">최신</a>
+		<a class="btn btn-default" href="<c:url value='/Movieing/Movie/Popular.mov'/>">인기</a>
 		
-		<a class="btn btn-primary">장르</a>
+		<a class="btn btn-primary" href="<c:url value='/Movieing/Movie/Genre.mov'/>">장르</a>
 	</div>
     	<div class="row" style="margin-top: 20px" >
 		<div class="col-md-2 col-sm-6 movie-poster">
