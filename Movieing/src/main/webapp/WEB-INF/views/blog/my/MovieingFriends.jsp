@@ -54,6 +54,7 @@ nav {
 	text-align: center;
 }
 
+<<<<<<< HEAD
 .radiusSmallImg {
 	width: 45px;
 	height: 45px;
@@ -66,6 +67,8 @@ nav {
 	text-align: center;
 }
 
+=======
+>>>>>>> branch 'master' of https://github.com/MyeongJi94/MOVIEING.git
 /* 배우감독이름 스팬 */
 .actorSpan {
 	font-size: 1.2em;
@@ -165,12 +168,21 @@ nav {
 
 								<div class="card-body">
 									<div class="row">
+<<<<<<< HEAD
 
 										<div class="col-sm-3" align="center">
 											<img class="img-fluid"
 												src="<c:url value="/resources/img/friends/pic1.jpg"/>"
 												alt="Image"
 												style="padding-left: 1.2em; width: 250px; height: 100px">
+=======
+									
+										<div class="col-sm-3" align="center">
+											<img class="img-fluid"
+												src="<c:url value="/resources/img/friends/pic1.jpg"/>"
+												alt="Image"
+												style="padding-left: 1.2em;width: 250px; height: 100px">
+>>>>>>> branch 'master' of https://github.com/MyeongJi94/MOVIEING.git
 										</div>
 										<div class="col-sm-9">
 											<h4 class="card-title">조커(Joker)</h4>
@@ -255,6 +267,7 @@ nav {
 						<span class="actorSpan" style="font-size: 1.5em">Road_dong</span>
 						<h6 class="actorSpan" style="font-size: 0.9em">길동이</h6>
 					</div>
+<<<<<<< HEAD
 
 
 				</div>
@@ -271,6 +284,31 @@ nav {
 						<div class="col-sm-6">
 							<h6 class="actorSpan" style="font-size: 0.9em">정길동</h6>
 						</div>
+=======
+					<div>
+						<button type="button" class="btn btn-primary">글쓰기</button>
+					</div>
+
+				</div>
+
+
+				<div>
+					<h5>타임라인</h5>
+					<div class="wrap">
+
+						<ul>
+							<li>김길동</li>
+							<li>박길동</li>
+							<li>정길동</li>
+							<li>정길동</li>
+							<li>정길동</li>
+							<li>정길동</li>
+							<li>정길동</li>
+							<li>정길동</li>
+
+
+						</ul>
+>>>>>>> branch 'master' of https://github.com/MyeongJi94/MOVIEING.git
 					</div>
 
 				</div>
