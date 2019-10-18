@@ -5,8 +5,7 @@
 근데 타일즈라 그냥 만들기만 한다고 되는게 아님.
 컨트롤러가서 RequestMapping해줘야됨.
 -->
-<div>
-
+<div class="container">
 
 
 

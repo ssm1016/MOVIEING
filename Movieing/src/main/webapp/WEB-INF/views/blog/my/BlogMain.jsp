@@ -3,6 +3,11 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
 
+<<<<<<< HEAD
+<!-- css파일 -->
+<link href="<c:url value='/resources/css/blogMainLayout.css'/>" rel="stylesheet" type="text/css">
+	
+=======
 
 <style>
 body {
@@ -81,6 +86,7 @@ font-size: 1.2em;
 
 >>>>>>> branch 'master' of https://github.com/ohhhhhjy/MOVIEING.git
 </style>
+>>>>>>> branch 'master' of https://github.com/ohhhhhjy/MOVIEING.git
 
 <script type="text/javascript"
 	src="https://www.gstatic.com/charts/loader.js"></script>
@@ -115,10 +121,10 @@ font-size: 1.2em;
 	<div class="row" style="padding-top: 20px">
 		<!-- 왼쪽 마이피드 -->
 		<div class="col-sm-7 blog-main">
-
 			<!-- 프로필 -->
 			<div class="jumbotron">
 				<div class="row">
+				
 					<!-- 프로필 사진 -->
 					<div class="col-sm-3" align="center">
 						<img width="100" height="100" alt="user"
@@ -142,9 +148,8 @@ font-size: 1.2em;
 						-->
 						<a class="btn btn-danger"
 							href="<c:url value='/Movieing/Blog/MovieingFriends.mov'/>">무빙프렌즈</a>
-
-
 					</div>
+					
 					<!-- 프로필 활동내역 -->
 					<div class="col-sm-9">
 						<p align="right" style="padding-bottom: 20px">
@@ -153,7 +158,7 @@ font-size: 1.2em;
 						<div class="row"
 							style="padding-top: 20px; padding-bottom: 20px; background-color: white; border-radius: 10px 10px 10px 10px;">
 							<div class="col-sm-3" align="center">
-								<a href="#"><span style="font-weight: bold">별점<br>
+								<a href="<c:url value='/Movieing/Blog/StarPoint.mov'/>"><span style="font-weight: bold">별점<br>
 										451
 								</span></a>
 							</div>
@@ -176,21 +181,18 @@ font-size: 1.2em;
 								</span></a>
 							</div>
 						</div>
-
-
-
-
 					</div>
 				</div>
-
 			</div>
+			<!-- 피드컨텐츠 시작 -->
+			<!-- 1.한줄컨텐츠(보고싶어요,별점,좋아요) -->
 			<div class="card border-secondary mb-3" style="max-width: 50rem;">
 				<div class="card-header">
 					겟아웃을 보고싶어요에 추가했어요!&nbsp;&nbsp;<span
 						style="color: #a8a5a5; font-size: 0.3em">2시간 전</span>
 				</div>
-
 			</div>
+			<!-- 2.여러줄컨텐츠(리뷰) -->
 			<div class="card border-secondary mb-3" style="max-width: 200rem;">
 				<div class="card-header">
 					토이스토리4에 리뷰를 남겼어요!&nbsp;&nbsp;<span
@@ -216,17 +218,14 @@ font-size: 1.2em;
 					</div>
 				</div>
 			</div>
-
-
-
-
-
 		</div>
-		<!-- /.blog-main -->
+		<!-- 왼쪽 마이피드끝-->
+		
 		<!-- 가운데 분계선 -->
 		<div
 			style="border-left-width: 1px; border-left-style: solid; border-left-color: #a8a5a5"></div>
-		<!-- 여기서부터 오른쪽 취향분석 -->
+		
+		<!-- 여기서부터 오른쪽 취향분석 시작 -->
 		<div class="col-sm-4 col-sm-offset-1 blog-sidebar">
 
 			<div class="sidebar-module sidebar-module-inset"
@@ -400,15 +399,17 @@ font-size: 1.2em;
 		<!-- /.blog-sidebar -->
 
 	</div>
-	<!-- /.row -->
+	<!--div class=row끝 -->
 
 </div>
 
-<!-- /.container ---->
-<div class="modal" id="followModal">
+<!--컨테이너 끝 ---->
+
+<!-- 모달시작 -->
+<div class="modal" id="followModal" >
 	<div class="modal-dialog" role="document">
 
-		<div class="modal-content">
+		<div class="modal-content" style="padding-bottom: 20px">
 			<!-- 모달 클로즈 버튼 -->
 			<div align="right" style="padding: 10px">
 				<button type="button" class="close" data-dismiss="modal"
@@ -417,7 +418,7 @@ font-size: 1.2em;
 				</button>
 			</div>
 			<!-- 모달 헤더 -->
-			<ul class="nav nav-pills nav-justified" role="tablist">
+			<ul class="nav nav-pills nav-justified" role="tablist" style="padding-bottom:20px">
 				<li class="nav-item"><a class="nav-link active"
 					href="#follower" data-toggle="pill" aria-controls="pills-follower"
 					id="pills-follower-tab">팔로워</a></li>
@@ -425,38 +426,285 @@ font-size: 1.2em;
 					data-toggle="pill" aria-controls="pills-following"
 					id="pills-following-tab">팔로잉</a></li>
 			</ul>
+
 			<!-- 모달컨텐츠 -->
-			<div class="tab-content" id="myTabContent" style="height: 400px">
+			<div class="tab-content" id="myTabContent" style="height: 477px;overflow-y:scroll;overflow-x: hidden;"  >
+				<!-- 모달컨텐츠1.팔로워 -->
 				<div class="tab-pane fade show active" id="follower" role="tabpanel"
 					aria-labelledby="pills-follower-tab">
-					<div class="row actorForm">
+					<div class="row followForm" >
 						<div class="col-sm-3">
 							<img class="radiusImg" alt="감독사진"
 								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
 						</div>
-						<div class="col-sm-6">
+						<div class="col-sm-7">
 							<span class="actorSpan">손예진</span>
+							<span class="followSpan">&nbsp;평가 2566</span>
+							<span class="followSpan">&nbsp;코멘트 457</span>
 						</div>
-						<div class="custom-control custom-switch">
-							<input type="checkbox" class="custom-control-input" 
-								id="customSwitch1"style=""> 
-								<label class="custom-control-label"
-								for="customSwitch1" style=""></label>
+						
+						<!-- 스위치 : 스위치의 input-id와 label-for값이 같아야 스위치가 작동한다-->
+						<div class="custom-control custom-switch col-sm-2">
+							<input type="checkbox" class="custom-control-input"
+								id="aSwitch1" > 
+								<label
+								class="custom-control-label" for="aSwitch1"
+								style=""></label>
+						</div>
+						
+					</div>
+					<hr class="my-3" style="width:450px">
+					<div class="row followForm" >
+						<div class="col-sm-3">
+							<img class="radiusImg" alt="감독사진"
+								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
+						</div>
+						<div class="col-sm-7">
+							<span class="actorSpan">임수정</span>
+							<span class="followSpan">&nbsp;평가 2566</span>
+							<span class="followSpan">&nbsp;코멘트 457</span>
+						</div>
+						
+						<!-- 스위치 -->
+						<div class="custom-control custom-switch col-sm-2">
+							<input type="checkbox" class="custom-control-input"
+								id="aSwitch2" > 
+								<label
+								class="custom-control-label" for="aSwitch2"
+								style=""></label>
 						</div>
 					</div>
-
-
-
-
+					<hr class="my-3" style="width:450px">
+					<div class="row followForm" >
+						<div class="col-sm-3">
+							<img class="radiusImg" alt="감독사진"
+								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
+						</div>
+						<div class="col-sm-7">
+							<span class="actorSpan">김민정</span>
+							<span class="followSpan">&nbsp;평가 2566</span>
+							<span class="followSpan">&nbsp;코멘트 457</span>
+						</div>
+						
+						<!-- 스위치 : 스위치의 input-id와 label-for값이 같아야 스위치가 작동한다-->
+						<div class="custom-control custom-switch col-sm-2">
+							<input type="checkbox" class="custom-control-input"
+								id="aSwitch3" > 
+								<label
+								class="custom-control-label" for="aSwitch3"
+								style=""></label>
+						</div>
+						
+					</div>
+					<!-- 모달 스크롤 테스팅 -->
+					<hr class="my-3" style="width:450px">
+					<div class="row followForm" >
+						<div class="col-sm-3">
+							<img class="radiusImg" alt="감독사진"
+								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
+						</div>
+						<div class="col-sm-7">
+							<span class="actorSpan">김민정</span>
+							<span class="followSpan">&nbsp;평가 2566</span>
+							<span class="followSpan">&nbsp;코멘트 457</span>
+						</div>
+						
+						<!-- 스위치 : 스위치의 input-id와 label-for값이 같아야 스위치가 작동한다-->
+						<div class="custom-control custom-switch col-sm-2">
+							<input type="checkbox" class="custom-control-input"
+								id="aSwitch3" > 
+								<label
+								class="custom-control-label" for="aSwitch3"
+								style=""></label>
+						</div>
+						
+					</div>
+					<hr class="my-3" style="width:450px">
+					<div class="row followForm" >
+						<div class="col-sm-3">
+							<img class="radiusImg" alt="감독사진"
+								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
+						</div>
+						<div class="col-sm-7">
+							<span class="actorSpan">김민정</span>
+							<span class="followSpan">&nbsp;평가 2566</span>
+							<span class="followSpan">&nbsp;코멘트 457</span>
+						</div>
+						
+						<!-- 스위치 : 스위치의 input-id와 label-for값이 같아야 스위치가 작동한다-->
+						<div class="custom-control custom-switch col-sm-2">
+							<input type="checkbox" class="custom-control-input"
+								id="aSwitch3" > 
+								<label
+								class="custom-control-label" for="aSwitch3"
+								style=""></label>
+						</div>
+						
+					</div>
+					<hr class="my-3" style="width:450px">
+					<div class="row followForm" >
+						<div class="col-sm-3">
+							<img class="radiusImg" alt="감독사진"
+								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
+						</div>
+						<div class="col-sm-7">
+							<span class="actorSpan">김민정</span>
+							<span class="followSpan">&nbsp;평가 2566</span>
+							<span class="followSpan">&nbsp;코멘트 457</span>
+						</div>
+						
+						<!-- 스위치 : 스위치의 input-id와 label-for값이 같아야 스위치가 작동한다-->
+						<div class="custom-control custom-switch col-sm-2">
+							<input type="checkbox" class="custom-control-input"
+								id="aSwitch3" > 
+								<label
+								class="custom-control-label" for="aSwitch3"
+								style=""></label>
+						</div>
+						
+					</div>
+					<hr class="my-3" style="width:450px">
+					<div class="row followForm" >
+						<div class="col-sm-3">
+							<img class="radiusImg" alt="감독사진"
+								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
+						</div>
+						<div class="col-sm-7">
+							<span class="actorSpan">김민정</span>
+							<span class="followSpan">&nbsp;평가 2566</span>
+							<span class="followSpan">&nbsp;코멘트 457</span>
+						</div>
+						
+						<!-- 스위치 : 스위치의 input-id와 label-for값이 같아야 스위치가 작동한다-->
+						<div class="custom-control custom-switch col-sm-2">
+							<input type="checkbox" class="custom-control-input"
+								id="aSwitch3" > 
+								<label
+								class="custom-control-label" for="aSwitch3"
+								style=""></label>
+						</div>
+						
+					</div>
+					<hr class="my-3" style="width:450px">
+					<div class="row followForm" >
+						<div class="col-sm-3">
+							<img class="radiusImg" alt="감독사진"
+								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
+						</div>
+						<div class="col-sm-7">
+							<span class="actorSpan">김민정</span>
+							<span class="followSpan">&nbsp;평가 2566</span>
+							<span class="followSpan">&nbsp;코멘트 457</span>
+						</div>
+						
+						<!-- 스위치 : 스위치의 input-id와 label-for값이 같아야 스위치가 작동한다-->
+						<div class="custom-control custom-switch col-sm-2">
+							<input type="checkbox" class="custom-control-input"
+								id="aSwitch3" > 
+								<label
+								class="custom-control-label" for="aSwitch3"
+								style=""></label>
+						</div>
+						
+					</div>
+					<hr class="my-3" style="width:450px">
+					<div class="row followForm" >
+						<div class="col-sm-3">
+							<img class="radiusImg" alt="감독사진"
+								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
+						</div>
+						<div class="col-sm-7">
+							<span class="actorSpan">김민정</span>
+							<span class="followSpan">&nbsp;평가 2566</span>
+							<span class="followSpan">&nbsp;코멘트 457</span>
+						</div>
+						
+						<!-- 스위치 : 스위치의 input-id와 label-for값이 같아야 스위치가 작동한다-->
+						<div class="custom-control custom-switch col-sm-2">
+							<input type="checkbox" class="custom-control-input"
+								id="aSwitch3" > 
+								<label
+								class="custom-control-label" for="aSwitch3"
+								style=""></label>
+						</div>
+						
+					</div>
+					<hr class="my-3" style="width:450px">
+					<div class="row followForm" >
+						<div class="col-sm-3">
+							<img class="radiusImg" alt="감독사진"
+								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
+						</div>
+						<div class="col-sm-7">
+							<span class="actorSpan">김민정</span>
+							<span class="followSpan">&nbsp;평가 2566</span>
+							<span class="followSpan">&nbsp;코멘트 457</span>
+						</div>
+						
+						<!-- 스위치 : 스위치의 input-id와 label-for값이 같아야 스위치가 작동한다-->
+						<div class="custom-control custom-switch col-sm-2">
+							<input type="checkbox" class="custom-control-input"
+								id="aSwitch3" > 
+								<label
+								class="custom-control-label" for="aSwitch3"
+								style=""></label>
+						</div>
+						
+					</div>
+					<hr class="my-3" style="width:450px">
+					<div class="row followForm" >
+						<div class="col-sm-3">
+							<img class="radiusImg" alt="감독사진"
+								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
+						</div>
+						<div class="col-sm-7">
+							<span class="actorSpan">김민정</span>
+							<span class="followSpan">&nbsp;평가 2566</span>
+							<span class="followSpan">&nbsp;코멘트 457</span>
+						</div>
+						
+						<!-- 스위치 : 스위치의 input-id와 label-for값이 같아야 스위치가 작동한다-->
+						<div class="custom-control custom-switch col-sm-2">
+							<input type="checkbox" class="custom-control-input"
+								id="aSwitch3" > 
+								<label
+								class="custom-control-label" for="aSwitch3"
+								style=""></label>
+						</div>
+						
+					</div>
+					<!-- 모달 스크롤 테스팅 -->
 				</div>
+				
 				<div class="tab-pane fade" id="following" role="tabpanel"
-					aria-labelledby="pills-following-tab">나는 팔로잉,,</div>
+					aria-labelledby="pills-following-tab">
+					<div class="row followForm">
+						<div class="col-sm-3">
+							<img class="radiusImg" alt="감독사진"
+								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
+						</div>
+						<div class="col-sm-7">
+							<span class="actorSpan">김남주</span>
+							<span class="followSpan">&nbsp;평가 2566</span>
+							<span class="followSpan">&nbsp;코멘트 457</span>
+						</div>
+						
+						<!-- 스위치 -->
+						<div class="custom-control custom-switch col-sm-2">
+							<input type="checkbox" class="custom-control-input"
+								id="bSwitch1" > 
+								<label
+								class="custom-control-label" for="bSwitch1"
+								style=""></label>
+						</div>
+					</div>
+					</div>
 			</div>
 
 		</div>
 	</div>
 </div>
-
+<!-- 모달끝 -->
 <script>
 	/* $('#followModal').modal({
 	
