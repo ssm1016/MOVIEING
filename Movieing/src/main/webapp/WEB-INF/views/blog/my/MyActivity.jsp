@@ -51,15 +51,49 @@ body {
     font-weight: 600;
 }
 
+.movieTitle{
+font-weight: bold;
+}
+.movieStar{
+color:#ffa136;
+font-size: 0.8em
+}
 
+.movieExpect{
+color:#db147b;
+font-size: 0.8em
+}
+.movieImg{
+width: 135px;
+height: 200px;
+}
 </style>
+
 <!--1.컨트롤러에서 넘어오는 page값 이용해서 탭 선택시켜주기 https://stackoverflow.com/questions/39461076/how-to-change-active-bootstrap-tab-with-javascript-->
 <!--2.선택된 탭을 알아내서 select div에 .html로 탭에 맞는 [선택 option] 넣어주기-->
 <!--3.선택된 select option에 따라 tap-content 내용 바꿔주기-->
+
 <script>
+$(function(){
+	tabSettingByPage();
+});
 
+function tabSettingByPage(){//전 페이지에서 넘어온 페이지값에 따라 탭과 탭컨텐츠 세팅해주기
+	switch(${page}){
+	case a: //page==a면 a탭 class에 addClass :active해라 /a탭컨텐츠에는 addclass :show active해라 다른애들은 removeClass 
+	case b: 
+	case c:
+	default:
+	}
+}
 
-/* $('#selector').html(하이); */
+function selectorSettingByTab(){//탭메뉴 클릭에 따라 셀렉트 세팅해주기
+	$('#selector').html('하이');
+}
+
+function tabContentSettingBySelector(){//셀렉트 클릭에 따라 탭컨텐츠 변화시키기
+	
+}
 
 </script>
 
@@ -86,76 +120,138 @@ body {
 		<div class="col-sm-10">
 			<!-- 탭바 : 각 탭에 해당하는 새로운 페이지만들기 / 탭컨텐츠는 각 페이지에서 ajax로 불러오거나 새로 페이지 만들기.  -->
 			<nav> 
-	          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+	          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist"><!-- 탭메뉴는 class에 active가 있어야 선택된 상태가 된다 -->
 	              <a class="nav-item nav-link active" id="nav-star-tab" data-toggle="tab" href="#nav-star" role="tab" aria-controls="nav-home" aria-selected="true">별점</a>
-	              <a class="nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-review" role="tab" aria-controls="nav-profile" aria-selected="false" >리뷰</a>
+	              <a class="nav-item nav-link " id="nav-review-tab" data-toggle="tab" href="#nav-review" role="tab" aria-controls="nav-profile" aria-selected="false" >리뷰</a>
 	              <a class="nav-item nav-link" id="nav-like-tab" data-toggle="tab" href="#nav-like" role="tab" aria-controls="nav-contact" aria-selected="false">좋아요</a>
 	              <a class="nav-item nav-link" id="nav-wish-tab" data-toggle="tab" href="#nav-wish" role="tab" aria-controls="nav-wish" aria-selected="false">보고싶어요</a>
 	          </div>
 	         </nav>
+	         
 	         <!-- 탭컨텐츠 -->
-	         <div class="tab-content" id="nav-tabContent">
+	         <div class="tab-content" id="nav-tabContent" style="padding-left: 10px;padding-right: 20px;margin-top: 20px;"><!--탭컨텐츠는 class에 show랑 active가 다 있어야 처음에 보여진다 -->
+                 <!--컨텐츠a:별점 -->
                  <div class="tab-pane fade show active" id="nav-star" role="tabpanel" aria-labelledby="nav-star-tab">
-                   		  별점이잔니,,
+                   		<div class="row" style="">
+							<div class="col-md-2 col-sm-6 movie-poster" style="">
+								<img  class="movieImg" src="http://placehold.it/135x200" alt=""/>
+								<span class="movieTitle">말레피센트</span><br>
+								<Span class="movieStar">★4.5</Span>
+							</div>
+							<div class="col-md-2 col-xs-6 movie-poster" style="">
+								<img class="movieImg" src="http://placehold.it/135x200" alt="" />
+								<span class="movieTitle">말레피센트</span><br>
+								<Span class="movieStar">★4.5</Span>
+							</div>
+							<div class="col-md-2 col-sm-6 movie-poster">
+								<img class="movieImg" src="http://placehold.it/135x200" alt="" />
+								<span class="movieTitle">말레피센트</span><br>
+								<Span class="movieStar">★4.5</Span>
+							</div>
+							<div class="col-md-2 col-sm-6 movie-poster">
+								<img class="movieImg" src="http://placehold.it/135x200" alt="" />
+								<span class="movieTitle">말레피센트</span><br>
+								<Span class="movieStar">★4.5</Span>
+							</div>
+							<div class="col-md-2 col-sm-6 movie-poster">
+								<img class="movieImg" src="http://placehold.it/135x200" alt="" />
+								<span class="movieTitle">말레피센트</span><br>
+								<Span class="movieStar">★4.5</Span>
+							</div>
+							<div class="col-md-2 col-sm-6 movie-poster">
+								<img class="movieImg" src="http://placehold.it/135x200" alt="" />
+								<span class="movieTitle">말레피센트</span><br>
+								<Span class="movieStar">★4.5</Span>
+							</div>
+						</div> 
                  </div>
+                 
+                 <!-- 컨텐츠b:리뷰 -->
                  <div class="tab-pane fade" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
-                     <table class="table" cellspacing="0">
-                         <thead>
-                             <tr>
-                                 <th>Project Name</th>
-                                 <th>Employer</th>
-                                 <th>Time</th>
-                             </tr>
-                         </thead>
-                         <tbody>
-                             <tr>
-                                 <td><a href="#">Work 1</a></td>
-                                 <td>Doe</td>
-                                 <td>john@example.com</td>
-                             </tr>
-                             <tr>
-                                 <td><a href="#">Work 2</a></td>
-                                 <td>Moe</td>
-                                 <td>mary@example.com</td>
-                             </tr>
-                             <tr>
-                                 <td><a href="#">Work 3</a></td>
-                                 <td>Dooley</td>
-                                 <td>july@example.com</td>
-                             </tr>
-                         </tbody>
-                     </table>
-                 </div>
+                 	<!-- 리뷰카드 -->
+					<div class="card border-secondary mb-3" style="max-width: 200rem;">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-sm-3" align="center">
+									<img class="movieImg"
+										src="../../resources/img/movie/toystoryMain.jpg" alt="포스터" />
+								</div>
+								<div class="col-sm-9">
+									<h4 class="card-title">토이스토리4</h4>
+									<span class="badge badge-pill badge-danger">★4.5</span>
+									<p class="card-text">토이스토리를 봤다. 너무 재밌었다. 너무 재밌었고, 너무 재밌어서
+										너무 재밌을 뻔했다. 너무 재밌는 영화였다.</p>
+									<a href="#"><span
+										style="font-weight: bold; color: #db147b; font-size: 0.9em">좋아요
+											25 </span></a>&nbsp;&nbsp;&nbsp; <a href="#"><span
+										style="font-weight: bold; color: #db147b; font-size: 0.9em">댓글
+											4 </span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                 
+                 <!-- 컨텐츠c:좋아요 -->
                  <div class="tab-pane fade" id="nav-like" role="tabpanel" aria-labelledby="nav-like-tab">
-                     <table class="table" cellspacing="0">
-                         <thead>
-                             <tr>
-                                 <th>Contest Name</th>
-                                 <th>Date</th>
-                                 <th>Award Position</th>
-                             </tr>
-                         </thead>
-                         <tbody>
-                             <tr>
-                                 <td><a href="#">Work 1</a></td>
-                                 <td>Doe</td>
-                                 <td>john@example.com</td>
-                             </tr>
-                             <tr>
-                                 <td><a href="#">Work 2</a></td>
-                                 <td>Moe</td>
-                                 <td>mary@example.com</td>
-                             </tr>
-                             <tr>
-                                 <td><a href="#">Work 3</a></td>
-                                 <td>Dooley</td>
-                                 <td>july@example.com</td>
-                             </tr>
-                         </tbody>
-                     </table>
+                   	<!-- 리뷰카드 -->
+					<div class="card border-secondary mb-3" style="max-width: 200rem;">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-sm-3" align="center">
+									<img class="movieImg"
+										src="../../resources/img/movie/toystoryMain.jpg" alt="포스터" />
+								</div>
+								<div class="col-sm-9">
+									<h4 class="card-title">토이스토리4</h4>
+									<span class="badge badge-pill badge-danger">★4.5</span>
+									<p class="card-text">토이스토리를 봤다. 너무 재밌었다. 너무 재밌었고, 너무 재밌어서
+										너무 재밌을 뻔했다. 너무 재밌는 영화였다.</p>
+									<a href="#"><span
+										style="font-weight: bold; color: #db147b; font-size: 0.9em">좋아요
+											25 </span></a>&nbsp;&nbsp;&nbsp; <a href="#"><span
+										style="font-weight: bold; color: #db147b; font-size: 0.9em">댓글
+											4 </span></a>
+								</div>
+							</div>
+						</div>
+					</div>
                  </div>
-                  <div class="tab-pane fade show active" id="nav-wish" role="tabpanel" aria-labelledby="nav-wish-tab">
-                  	  보고싶어요 잔니
+                 
+                 <!-- 컨텐츠d:보고싶어요 -->
+                  <div class="tab-pane fade" id="nav-wish" role="tabpanel" aria-labelledby="nav-wish-tab">
+                  	  <div class="row" style="">
+							<div class="col-md-2 col-sm-6 movie-poster" style="">
+								<img  class="movieImg" src="http://placehold.it/135x200" alt=""/>
+								<span class="movieTitle">말레피센트</span><br>
+								<Span class="movieExpect">예상★4.5</Span>
+							</div>
+							<div class="col-md-2 col-xs-6 movie-poster" style="">
+								<img class="movieImg" src="http://placehold.it/135x200" alt="" />
+								<span class="movieTitle">말레피센트</span><br>
+								<Span class="movieExpect">예상★4.5</Span>
+							</div>
+							<div class="col-md-2 col-sm-6 movie-poster">
+								<img class="movieImg" src="http://placehold.it/135x200" alt="" />
+								<span class="movieTitle">말레피센트</span><br>
+								<Span class="movieExpect">예상★4.5</Span>
+							</div>
+							<div class="col-md-2 col-sm-6 movie-poster">
+								<img class="movieImg" src="http://placehold.it/135x200" alt="" />
+								<span class="movieTitle">말레피센트</span><br>
+								<Span class="movieExpect">예상★4.5</Span>
+							</div>
+							<div class="col-md-2 col-sm-6 movie-poster">
+								<img class="movieImg" src="http://placehold.it/135x200" alt="" />
+								<span class="movieTitle">말레피센트</span><br>
+								<Span class="movieExpect">예상★4.5</Span>
+							</div>
+							<div class="col-md-2 col-sm-6 movie-poster">
+								<img class="movieImg" src="http://placehold.it/135x200" alt="" />
+								<span class="movieTitle">말레피센트</span><br>
+								<Span class="movieExpect">예상★4.5</Span>
+							</div>
+						</div> 
                  </div>
              </div>
 		</div>

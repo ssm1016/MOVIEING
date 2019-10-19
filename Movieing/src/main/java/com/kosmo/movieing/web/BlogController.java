@@ -39,7 +39,7 @@ public class BlogController {
 	//블로그-내 활동
 	@RequestMapping("/Movieing/Blog/MyActivity.mov")
 	public String myActiviy(@RequestParam String page,Model model) {
-//		model.addAttribute("page",page);
+		model.addAttribute("page",page);
 		return "blog/my/MyActivity.tiles";
 	}
 	
