@@ -136,25 +136,25 @@ HEAD /* 필모그램 스팬 */
 						<div class="row"
 							style="padding-top: 20px; padding-bottom: 20px; background-color: white; border-radius: 10px 10px 10px 10px;">
 							<div class="col-sm-3" align="center">
-								<a href="<c:url value='/Movieing/Blog/MyActivity.mov?page=star'/>"><span
+								<a href="<c:url value='/Movieing/Blog/MyActivity.mov?page=a'/>"><span
 									style="font-weight: bold">별점<br> 451
 								</span></a>
 							</div>
 							<div class="col-sm-3" align="center"
 								style="border-left-width: 2px; border-left-style: solid; border-left-color: #a8a5a5">
-								<a href="<c:url value='/Movieing/Blog/MyActivity.mov'/>"><span style="font-weight: bold">리뷰<br>
+								<a href="<c:url value='/Movieing/Blog/MyActivity.mov?page=b'/>"><span style="font-weight: bold">리뷰<br>
 										47
 								</span></a>
 							</div>
 							<div class="col-sm-3" align="center"
 								style="border-left-width: 2px; border-left-style: solid; border-left-color: #a8a5a5">
-								<a href="<c:url value='/Movieing/Blog/MyActivity.mov'/>"><span style="font-weight: bold">좋아요<br>
+								<a href="<c:url value='/Movieing/Blog/MyActivity.mov?page=c'/>"><span style="font-weight: bold">좋아요<br>
 										25
 								</span></a>
 							</div>
 							<div class="col-sm-3" align="center"
 								style="border-left-width: 2px; border-left-style: solid; border-left-color: #a8a5a5">
-								<a href="<c:url value='/Movieing/Blog/MyActivity.mov'/>"><span style="font-weight: bold">보고싶어요<br>
+								<a href="<c:url value='/Movieing/Blog/MyActivity.mov?page=d'/>"><span style="font-weight: bold">보고싶어요<br>
 										91
 								</span></a>
 							</div>
