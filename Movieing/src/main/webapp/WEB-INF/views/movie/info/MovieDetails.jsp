@@ -183,7 +183,9 @@
 								<a class="title-credits-name">형사 1</a>
 								<div class="title-credits_actor-role">
 									<div class="title-redits_actor-role-name">
-										<strong>마동석</strong>
+										<a href="<c:url value='/Movieing/Movie/Filmography.mov'/>">
+											<strong>마동석</strong>
+										</a>
 									</div>
 								</div>
 							</div>
