@@ -95,17 +95,17 @@ body {
 
 					<!-- 프로필 사진 -->
 					<div class="col-sm-3" align="center">
-						<img width="100" height="100" alt="user"
-							src="<c:url value='/resources/img/user.png'/>" />
+						<img class="profileImage" alt="프로필사진"
+							src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
 						<h5 style="padding-top: 20px">Road-dong</h5>
 						<div class="row">
 							<div class="col-sm-6">
-								<a href="#followModal" data-toggle="modal"><span
+								<a href="#followModal" data-toggle="modal" id="followerModal" class="followModal"><span
 									style="font-weight: bold; color: black; font-size: 0.9em">팔로워
 										25 </span></a>
 							</div>
 							<div class="col-sm-6">
-								<a href="#"><span
+								<a href="#followModal" data-toggle="modal" id="followingModal" class="followModal"><span
 									style="font-weight: bold; color: black; font-size: 0.9em">팔로잉
 										43 </span></a>
 							</div>
@@ -340,21 +340,21 @@ body {
 				</button>
 			</div>
 			<!-- 모달 헤더 -->
-			<ul class="nav nav-pills nav-justified" role="tablist"
-				style="padding-bottom: 20px">
-				<li class="nav-item"><a class="nav-link active"
+			<ul class="nav nav-pills nav-justified " role="tablist"
+				style="padding-bottom: 20px;  ">
+				<li class="nav-item"><a class="nav-link "
 					href="#follower" data-toggle="pill" aria-controls="pills-follower"
 					id="pills-follower-tab">팔로워</a></li>
 				<li class="nav-item"><a class="nav-link" href="#following"
 					data-toggle="pill" aria-controls="pills-following"
 					id="pills-following-tab">팔로잉</a></li>
 			</ul>
-
+			
 			<!-- 모달컨텐츠 -->
 			<div class="tab-content" id="myTabContent"
 				style="height: 477px; overflow-y: scroll; overflow-x: hidden;">
 				<!-- 모달컨텐츠1.팔로워 -->
-				<div class="tab-pane fade show active" id="follower" role="tabpanel"
+				<div class="tab-pane fade " id="follower" role="tabpanel"
 					aria-labelledby="pills-follower-tab">
 					<div class="row followForm">
 						<div class="col-sm-3">
@@ -408,154 +408,10 @@ body {
 						</div>
 
 					</div>
-					<!-- 모달 스크롤 테스팅 -->
-					<hr class="my-3" style="width: 450px">
-					<div class="row followForm">
-						<div class="col-sm-3">
-							<img class="radiusImg" alt="감독사진"
-								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
-						</div>
-						<div class="col-sm-7">
-							<span class="actorSpan">김민정</span> <span class="followSpan">&nbsp;평가
-								2566</span> <span class="followSpan">&nbsp;코멘트 457</span>
-						</div>
-
-						<!-- 스위치 : 스위치의 input-id와 label-for값이 같아야 스위치가 작동한다-->
-						<div class="custom-control custom-switch col-sm-2">
-							<input type="checkbox" class="custom-control-input" id="aSwitch3">
-							<label class="custom-control-label" for="aSwitch3" style=""></label>
-						</div>
-
-					</div>
-					<hr class="my-3" style="width: 450px">
-					<div class="row followForm">
-						<div class="col-sm-3">
-							<img class="radiusImg" alt="감독사진"
-								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
-						</div>
-						<div class="col-sm-7">
-							<span class="actorSpan">김민정</span> <span class="followSpan">&nbsp;평가
-								2566</span> <span class="followSpan">&nbsp;코멘트 457</span>
-						</div>
-
-						<!-- 스위치 : 스위치의 input-id와 label-for값이 같아야 스위치가 작동한다-->
-						<div class="custom-control custom-switch col-sm-2">
-							<input type="checkbox" class="custom-control-input" id="aSwitch3">
-							<label class="custom-control-label" for="aSwitch3" style=""></label>
-						</div>
-
-					</div>
-					<hr class="my-3" style="width: 450px">
-					<div class="row followForm">
-						<div class="col-sm-3">
-							<img class="radiusImg" alt="감독사진"
-								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
-						</div>
-						<div class="col-sm-7">
-							<span class="actorSpan">김민정</span> <span class="followSpan">&nbsp;평가
-								2566</span> <span class="followSpan">&nbsp;코멘트 457</span>
-						</div>
-
-						<!-- 스위치 : 스위치의 input-id와 label-for값이 같아야 스위치가 작동한다-->
-						<div class="custom-control custom-switch col-sm-2">
-							<input type="checkbox" class="custom-control-input" id="aSwitch3">
-							<label class="custom-control-label" for="aSwitch3" style=""></label>
-						</div>
-
-					</div>
-					<hr class="my-3" style="width: 450px">
-					<div class="row followForm">
-						<div class="col-sm-3">
-							<img class="radiusImg" alt="감독사진"
-								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
-						</div>
-						<div class="col-sm-7">
-							<span class="actorSpan">김민정</span> <span class="followSpan">&nbsp;평가
-								2566</span> <span class="followSpan">&nbsp;코멘트 457</span>
-						</div>
-
-						<!-- 스위치 : 스위치의 input-id와 label-for값이 같아야 스위치가 작동한다-->
-						<div class="custom-control custom-switch col-sm-2">
-							<input type="checkbox" class="custom-control-input" id="aSwitch3">
-							<label class="custom-control-label" for="aSwitch3" style=""></label>
-						</div>
-
-					</div>
-					<hr class="my-3" style="width: 450px">
-					<div class="row followForm">
-						<div class="col-sm-3">
-							<img class="radiusImg" alt="감독사진"
-								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
-						</div>
-						<div class="col-sm-7">
-							<span class="actorSpan">김민정</span> <span class="followSpan">&nbsp;평가
-								2566</span> <span class="followSpan">&nbsp;코멘트 457</span>
-						</div>
-
-						<!-- 스위치 : 스위치의 input-id와 label-for값이 같아야 스위치가 작동한다-->
-						<div class="custom-control custom-switch col-sm-2">
-							<input type="checkbox" class="custom-control-input" id="aSwitch3">
-							<label class="custom-control-label" for="aSwitch3" style=""></label>
-						</div>
-
-					</div>
-					<hr class="my-3" style="width: 450px">
-					<div class="row followForm">
-						<div class="col-sm-3">
-							<img class="radiusImg" alt="감독사진"
-								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
-						</div>
-						<div class="col-sm-7">
-							<span class="actorSpan">김민정</span> <span class="followSpan">&nbsp;평가
-								2566</span> <span class="followSpan">&nbsp;코멘트 457</span>
-						</div>
-
-						<!-- 스위치 : 스위치의 input-id와 label-for값이 같아야 스위치가 작동한다-->
-						<div class="custom-control custom-switch col-sm-2">
-							<input type="checkbox" class="custom-control-input" id="aSwitch3">
-							<label class="custom-control-label" for="aSwitch3" style=""></label>
-						</div>
-
-					</div>
-					<hr class="my-3" style="width: 450px">
-					<div class="row followForm">
-						<div class="col-sm-3">
-							<img class="radiusImg" alt="감독사진"
-								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
-						</div>
-						<div class="col-sm-7">
-							<span class="actorSpan">김민정</span> <span class="followSpan">&nbsp;평가
-								2566</span> <span class="followSpan">&nbsp;코멘트 457</span>
-						</div>
-
-						<!-- 스위치 : 스위치의 input-id와 label-for값이 같아야 스위치가 작동한다-->
-						<div class="custom-control custom-switch col-sm-2">
-							<input type="checkbox" class="custom-control-input" id="aSwitch3">
-							<label class="custom-control-label" for="aSwitch3" style=""></label>
-						</div>
-
-					</div>
-					<hr class="my-3" style="width: 450px">
-					<div class="row followForm">
-						<div class="col-sm-3">
-							<img class="radiusImg" alt="감독사진"
-								src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
-						</div>
-						<div class="col-sm-7">
-							<span class="actorSpan">김민정</span> <span class="followSpan">&nbsp;평가
-								2566</span> <span class="followSpan">&nbsp;코멘트 457</span>
-						</div>
-
-						<!-- 스위치 : 스위치의 input-id와 label-for값이 같아야 스위치가 작동한다-->
-						<div class="custom-control custom-switch col-sm-2">
-							<input type="checkbox" class="custom-control-input" id="aSwitch3">
-							<label class="custom-control-label" for="aSwitch3" style=""></label>
-						</div>
-
-					</div>
-					<!-- 모달 스크롤 테스팅 -->
+					
 				</div>
-
+				
+				<!-- 모달컨텐츠2:팔로잉 -->
 				<div class="tab-pane fade" id="following" role="tabpanel"
 					aria-labelledby="pills-following-tab">
 					<div class="row followForm">
@@ -581,8 +437,26 @@ body {
 	</div>
 </div>
 <!-- 모달끝 -->
+
+
 <script>
-	/* $('#followModal').modal({
+	$(function(){
+		$('.followModal').click(function(){//내 프로필에서 '팔로우','팔로잉' 각각 클릭시, 모달의 선택상태 세팅해주기.
+			if($(this).get(0).id=='followerModal'){
+				$('#pills-following-tab').removeClass('active');
+				$('#pills-follower-tab').addClass('active');
+				$('#following').removeClass('show active');
+				$('#follower').addClass('show active');
+			}
+			else{
+				$('#pills-follower-tab').removeClass('active');
+				$('#pills-following-tab').addClass('active');
+				$('#follower').removeClass('show active');
+				$('#following').addClass('show active');
+			}
+		});
+		
 	
-	 }); */
+	});
+	
 </script>
