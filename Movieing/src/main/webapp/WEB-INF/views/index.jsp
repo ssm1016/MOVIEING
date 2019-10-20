@@ -15,9 +15,32 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-lead-in">Welcome To MOVIEING</div>
-        <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+        <div class="intro-heading text-uppercase">Welcome To MOVIEING</div>
+        <h4>당신의 취향을 알려주세요 :)</h4>
+        <br>
+        <div class="btn btn-outline-light"  onclick="btnChange()">#간담서늘한</div>
+        <div class="btn btn-outline-light"  onclick="btnChange()">#배꼽빠지는</div>
+        <div class="btn btn-outline-light" onclick="btnChange()">#친구랑 보기 좋은</div>
+        <div class="btn btn-outline-light" onclick="btnChange()">#첫데이트</div>
+        <div class="btn btn-outline-light" onclick="btnChange()">#독립영화</div>
+        <br>
+        <br>
+        <div class="btn btn-outline-light" onclick="btnChange()">#실화 바탕</div>
+        <div class="btn btn-outline-light" onclick="btnChange()">#애니메이션</div>
+        <div class="btn btn-outline-light" onclick="btnChange()">#만화 원작</div>
+        <div class="btn btn-outline-light" onclick="btnChange()">#시리즈물</div>
+        <div class="btn btn-outline-light" onclick="btnChange()">#내이름은 탐정, 코난이죠</div>
+        <br>
+        <br>
+        <div class="btn btn-outline-light" onclick="btnChange()">#아이들과 함께</div>
+        <div class="btn btn-outline-light" onclick="btnChange()">#명절분위기</div>
+        <div class="btn btn-outline-light" onclick="btnChange()">#이건 밤에 봐야해</div>
+        <div class="btn btn-outline-light" onclick="btnChange()">#앗 엄빠주의</div>
+        <div class="btn btn-outline-light" onclick="btnChange()">#(대충 액션 영화라는 내용)</div>       
+        <br>
+        <br>
+        <br>       
+        <a class="btn btn-primary text-uppercase js-scroll-trigger btn-lg" href="#services">취향 알아보러 가기	</a>
       </div>
     </div>
   </header>
@@ -89,7 +112,7 @@
           <ul class="timeline">
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="<c:url value='/resources/img/about/1.jpg'/>" alt="">
+                <img class="rounded-circle img-fluid" src="<c:url value='/resources/img/about/mov1.jpg'/>" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -106,7 +129,7 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="<c:url value='/resources/img/about/2.jpg'/>" alt="">
+                <img class="rounded-circle img-fluid" src="<c:url value='/resources/img/about/mov2.jpg'/>" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -125,7 +148,7 @@
             </li>
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="<c:url value='/resources/img/about/3.jpg'/>" alt="">
+                <img class="rounded-circle img-fluid" src="<c:url value='/resources/img/about/mov3.jpg'/>" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -144,7 +167,7 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="<c:url value='/resources/img/about/4.jpg'/>" alt="">
+                <img class="rounded-circle img-fluid" src="<c:url value='/resources/img/about/mov4.jpg'/>" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -242,9 +265,20 @@
     </div>
   </div>
   
+  <script type="text/javascript">
+  
+  	 function btnChange() {
+		var btn = document.getElementsByClassName('btn btn-outline-light');
+		
+		btn.className = "btn btn-light";
+		
+	}
+  
+  </script>
 
 
 
 </body>
 
 </html>
+

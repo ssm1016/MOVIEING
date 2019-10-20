@@ -23,6 +23,8 @@
   <!-- Custom styles for this template -->
   <link href="<c:url value='/resources/css/agency.css'/>" rel="stylesheet">
   
+  <!-- 제이쿼리  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   
     <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
     <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
@@ -48,6 +50,8 @@
   	  <!-- Bootstrap core JavaScript -->
 	  <script src="<c:url value='/resources/vendor/jquery/jquery.min.js'/>"></script>
 	  <script src="<c:url value='/resources/vendor/bootstrap/js/bootstrap.bundle.min.js'/>"></script>
+	 
+	 
 	
 	  <!-- Plugin JavaScript -->
 	  <script src="<c:url value='/resources/vendor/jquery-easing/jquery.easing.min.js'/>"></script>
