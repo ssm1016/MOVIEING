@@ -12,11 +12,15 @@ public class MovieController {
 	}
 	@RequestMapping("/Movieing/Movie/MovieDetails.mov")
 	public String movieDetail() {
-		
-		
 		return "movie/info/MovieDetails.tiles";
 	}
-	/////////////////////////////////////////
+	@RequestMapping("/Movieing/Movie/Filmography.mov")
+	public String filmography() {
+		return "movie/info/Filmography.tiles";
+	}
+	
+	///////////////////////////////////////////////////////
+	
 	@RequestMapping("/Movieing/Movie/Genre.mov")
 	public String movieGenre() {
 		return "movie/list/Genre.tiles";
