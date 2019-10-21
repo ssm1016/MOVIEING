@@ -10,15 +10,14 @@
 
 <body id="page-top">
 	
- 
+	
   <!-- Header -->
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
         <div class="intro-heading text-uppercase">Welcome To MOVIEING</div>
-        <h4>당신의 취향을 알려주세요 :)</h4>
-        <br>
-        <div class="btn btn-outline-light"  onclick="btnChange()">#간담서늘한</div>
+        
+        <div class="btn btn-outline-light">#간담서늘한</div>
         <div class="btn btn-outline-light"  onclick="btnChange()">#배꼽빠지는</div>
         <div class="btn btn-outline-light" onclick="btnChange()">#친구랑 보기 좋은</div>
         <div class="btn btn-outline-light" onclick="btnChange()">#첫데이트</div>
@@ -39,6 +38,9 @@
         <div class="btn btn-outline-light" onclick="btnChange()">#(대충 액션 영화라는 내용)</div>       
         <br>
         <br>
+        <br>
+        <br>       
+        <br>       
         <br>       
         <a class="btn btn-primary text-uppercase js-scroll-trigger btn-lg" href="#services">취향 알아보러 가기	</a>
       </div>
@@ -270,9 +272,16 @@
   	 function btnChange() {
 		var btn = document.getElementsByClassName('btn btn-outline-light');
 		
-		btn.className = "btn btn-light";
 		
 	}
+  	 $('.btn-outline-light').click(function() {
+		$(this).toggleClass('btn-light');
+		$(this).toggleClass('btn-outline-light');
+	});
+  	 
+  	//$('.btn-light').click(function() {
+	//	$(this).attr('class', 'btn btn-outline-light');
+	//});
   
   </script>
 

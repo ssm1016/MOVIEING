@@ -191,7 +191,7 @@ div{
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	top: 0;
+	
 }
 
 .img-fade-in-out{
@@ -335,4 +335,32 @@ div{
 	width: 50px;
 	height: 50px;
 	margin-bottom: 3px;
+}
+
+.title-list{
+	opacity: 1;
+	transition : opacity .25s ease-in;
+	min-height: 100vh;
+}
+
+.row{
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.title-list-options{
+	position: relative;
+	padding : 10px;
+}
+
+.title-list-options--total{
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	top: 10px;
+}
+
+.title-list-row_row_title{
+	font-size: 22px;
+	margin-right: 6px;
 }
