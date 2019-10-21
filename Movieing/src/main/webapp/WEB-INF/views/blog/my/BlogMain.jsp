@@ -121,7 +121,7 @@ body {
 					<!-- 프로필 활동내역 -->
 					<div class="col-sm-9">
 						<p align="right" style="padding-bottom: 20px">
-							<a class="btn btn-dark btn-sm" href="#" role="button">마이페이지</a>
+							<a class="btn btn-dark btn-sm" href="<c:url value='/Movieing/Blog/MyPage.mov'/>" role="button">마이페이지</a>
 						</p>
 						<div class="row"
 							style="padding-top: 20px; padding-bottom: 20px; background-color: white; border-radius: 10px 10px 10px 10px;">
