@@ -73,6 +73,8 @@
 	padding-bottom: 20px;
 }
 
+
+
 /*영화 이미지 그림자효과*/
 .effect {
 	border: 1px solid #888888;
@@ -119,49 +121,7 @@ a {
 	width: 500px;
 	margin: auto;
 }
-
-/*모달 위치*/
-.modal {
-	text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-	.modal:before {
-		display: inline-block;
-		vertical-align: middle;
-		content: " ";
-		height: 100%;
-	}
-}
-
-.modal-dialog {
-	display: inline-block;
-	text-align: left;
-	vertical-align: middle;
-}
-
-/*더보기 ...조건*/
-/*
-.card-text {
-	white-space: nowrap;
-	word-wrap: normal;
-	height: 140px;
-	width: 578.63px;
-	text-overflow: ellipsis;
-	float: left;
-	overflow: hidden;
-	 display:-webkit-box;
-    -webkit-line-clamp:3;
-    -webkit-box-orient:vertical;
-    line-height:20px;
-}
-*/
 </style>
-
-
-
-
-
 
 <!-- 위에 패딩주기 -->
 <div style="padding-top: 150px; background-color: white;"></div>
@@ -171,26 +131,24 @@ a {
 <div
 	style="padding-left: 40px; background-color: white; padding-right: 40px">
 	<div class="row">
-		<a class="btn btn-secondary btn-default"
-			href="<c:url value='/Movieing/Blog/BlogMain.mov'/>"
-			style="text-align: center;">◁ 블로그 메인</a>
+
+		<a class="btn btn-secondary"
+			href="<c:url value='/Movieing/Blog/BlogMain.mov'/>">◁ 블로그 메인</a>
 
 		<div style="padding-left: 450px">
-			<h3 style="color: orange; font-weight: bold;">팔로우 유저들의 활동로그</h3>
-		</div>
-		<div style="padding-left: 200px;">
 			<h3 style="color: black">
-				<a href="<c:url value="/Movieing/Blog/MovieingFriends2.mov"/>">모든
-					활동 로그</a>
+				<a href="<c:url value="/Movieing/Blog/MovieingFriends.mov"/>">팔로우
+					유저들의 활동로그</a>
 			</h3>
 		</div>
-
+		<div style="padding-left: 200px;">
+			<h3 style="color: orange; font-weight: bold;">모든 활동 로그</h3>
+		</div>
 
 	</div>
 	<!-- 중간줄 -->
 	<hr class="my-3">
 </div>
-
 
 
 <!-- 피드보이기시작 -->
@@ -214,11 +172,10 @@ a {
 				</div>
 
 
-
 				<div class="card">
 
 					<div class="card-body">
-						<div class="h5">@Road_dong</div>
+						<div class="h5">@road_dong</div>
 						<div class="h7 text-muted">우빈이</div>
 						<div class="h7">스릴러를 좋아하는 우빈이라고 합니다</div>
 					</div>
@@ -385,7 +342,6 @@ a {
 				<!-- Post /////-->
 				<!-- 게시물 간격 주기 -->
 				<div style="padding-bottom: 50px"></div>
-
 				<!--- \\\\\\\Post-->
 				<div class="card gedf-card">
 					<div class="card-header">
@@ -530,9 +486,9 @@ a {
 					</div>
 				</div>
 				<!-- Post /////-->
+
 				<!-- 게시물 간격 주기 -->
 				<div style="padding-bottom: 50px"></div>
-
 
 				<!--- \\\\\\\Post-->
 				<div class="card gedf-card">
@@ -681,7 +637,6 @@ a {
 			</div>
 
 
-
 			<div class="col-md-2">
 				<!-- 마이 프로필보이기 -->
 
@@ -709,7 +664,6 @@ a {
 
 
 
-
 				<!-- 타임라인 -->
 
 				<div class="card gedf-card">
@@ -717,19 +671,13 @@ a {
 					<div class="card bg-light text-dark">
 						<div class="card-body">
 							<div class="row" style="padding-left: 10px; height: 15px">
-								<img
-									src="<c:url value='/resources/img/friends/passage-of-time.png'/>"
+								<img src="<c:url value='/resources/img/friends/people.png'/>"
 									alt="타임라인 로고" style="width: 25px; height: 25px" />
 								<h5 class="card-title;"
-									style="padding-left: 10px; font-weight: bold;">타임 라인</h5>
-								<a style="padding-left: 50px; text-decoration: underline;"
-									href="<c:url value='/Movieing/Blog/MF_Timeline.mov'/>">모두
-									보기</a>
-
+									style="padding-left: 10px; font-weight: bold;">추천 유저</h5>
+								<h6 style="padding-left: 50px; text-decoration: underline;">모두
+									보기</h6>
 							</div>
-
-
-
 
 							<div>
 								<!-- 중간줄 -->
