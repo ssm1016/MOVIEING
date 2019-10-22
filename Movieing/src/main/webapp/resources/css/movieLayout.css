@@ -284,6 +284,8 @@ div{
 	position: relative;
 	padding-bottom: 7px;
 	
+	
+	
 }
 
 .price-comparison_grid_row_holder{
@@ -291,16 +293,19 @@ div{
 	overflow-y: hidden;
 	position: relative;
 	min-height: 72px; 
+	
 }
 
 .price-comparison_grid_row_elemnet{
-	display: inline-block;
+	
 	position: relative;
+	display: inline-block;
 }
 
 .price-comparison_grid_row_element_icon{
 	margin-right: 8px;
 	text-align: center;
+	
 }
 
 .price-comparison_grid_row_price{
@@ -363,4 +368,61 @@ div{
 .title-list-row_row_title{
 	font-size: 22px;
 	margin-right: 6px;
+}
+
+.price-comparison-inline{
+	content : "";
+	clear:both;
+	display: block;
+	/*visibility: hidden;*/
+	/*height: 0;*/
+	text-align: center;
+}
+
+.price-comparison--inline .price--comparison_grid_row{
+	border-bottom: none;
+	padding: 10px 0;
+	padding-left: 0;
+	position: relative;
+	float: left;
+	margin-right: 10px;
+}
+
+.price-comparison--inline .price--comparison_grid_row_title{
+	position: relative;
+	transform : none;
+	transform-origin : 0 0;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.price--comparison_grid_row_holder{
+	min-height: 69px;
+	margin-top: 5px;
+	overflow-x : hidden;
+	overflow-y : hidden;
+}
+
+.price-comparison_grid_row_element{
+	display: inline-block;
+	position: relative;
+}
+
+.price-comparison-_grid_row_element_icon{
+	margin-right: 8px;
+	text-align: center;
+}
+
+.price-comparison_grid_row_price{
+	margin-bottom:0;
+	text-align: center;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 13px;
+	
+}
+
+.horizontal-flow{
+	display: flex;
 }
