@@ -96,7 +96,7 @@ body {
 					<!-- 프로필 사진 -->
 					<div class="col-sm-3" align="center">
 						<img class="profileImage" alt="프로필사진"
-							src="<c:url value='/resources/img/actordirector/yeomjunga.jpg'/>" />
+							src="https://ssl.pstatic.net/imgmovie/mdi/mit110/1676/167613_P09_182225.jpg" />
 						<h5 style="padding-top: 20px">Road-dong</h5>
 						<div class="row">
 							<div class="col-sm-6">

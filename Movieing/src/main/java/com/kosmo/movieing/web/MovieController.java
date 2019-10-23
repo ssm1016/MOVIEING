@@ -19,6 +19,11 @@ public class MovieController {
 		return "movie/info/Filmography.tiles";
 	}
 	
+	@RequestMapping("/Movieing/Movie/RatingMovie.mov")
+	public String ratingMovie() {
+		return "movie/screening/RatingMovie.tiles";
+	}
+	
 	///////////////////////////////////////////////////////
 	
 	@RequestMapping("/Movieing/Movie/Genre.mov")
