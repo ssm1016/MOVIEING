@@ -1,6 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!-- 
+ -->
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+ 
 
 <link href="<c:url value='/resources/css/movieLayout.css'/>" rel="stylesheet" type="text/css">
 
@@ -23,9 +29,7 @@
 					<a href="www.naver.com" id="likeButtonSpa">
 						<span id="likeButtonSpan">좋아요</span>
 					</a>
-					<a href="www.naver.com" id="likeButtonSpa">
-						<span id="likeButtonSpan">싫어요</span>
-					</a>
+					
 				</div>
 			</div><!-- wathchListFrame -->
 			
@@ -213,6 +217,14 @@
 				</div><!-- 출연진 이름 , 역할 틀 끝-->
 			</div>
 		</div>
+			<div>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br>
+			</div>
 	</div><!-- 오른쪽 틀 끝 -->
 	<div>
 	<div><!-- 줄거리 들어갈 공간 시작 -->
@@ -220,19 +232,11 @@
 						줄거리
 					</p>
 					<p>
-						<span style="white-space: pre-line;">
+						<span style="white-space: normal	;" >
 						2004년 서울…
-						 하얼빈에서 넘어와 단숨에 기존 조직들을 장악하고
-						 가장 강력한 세력인 춘식이파 보스 ‘황사장(조재윤 분)’까지 위협하며
-						 도시 일대의 최강자로 급부상한 신흥범죄조직의 악랄한 보스 ‘장첸(윤계상 분)’.
-						 
-						 대한민국을 뒤흔든 ‘장첸(윤계상 분)’ 일당을 잡기 위해
-						 오직 주먹 한방으로 도시의 평화를 유지해 온 괴물형사 ‘마석도(마동석 분)’와
-						 인간미 넘치는 든든한 리더 ‘전일만(최귀화 분)’ 반장이 이끄는 강력반은
-						 나쁜 놈들을 한방에 쓸어버릴 끝.짱.나.는. 작전을 세우는데…
-						 
-						 통쾌하고! 화끈하고! 살벌하게!
-						 나쁜 놈들 때려잡는 강력반 형사들의 ‘조폭소탕작전’이 시작된다!
+						 하얼빈에서 넘어와 단숨에 기존 조직들을 장악하고 가장 강력한 세력인 춘식이파 보스 ‘황사장(조재윤 분)’까지 위협하며 도시 일대의 최강자로 급부상한 신흥범죄조직의 악랄한 보스 ‘장첸(윤계상 분)’.
+						 대한민국을 뒤흔든 ‘장첸(윤계상 분)’ 일당을 잡기 위해 오직 주먹 한방으로 도시의 평화를 유지해 온 괴물형사 ‘마석도(마동석 분)’와 인간미 넘치는 든든한 리더 ‘전일만(최귀화 분)’ 반장이 이끄는 강력반은
+						 나쁜 놈들을 한방에 쓸어버릴 끝.짱.나.는. 작전을 세우는데… 통쾌하고! 화끈하고! 살벌하게! 나쁜 놈들 때려잡는 강력반 형사들의 ‘조폭소탕작전’이 시작된다!
 						</span>
 					</p>
 				</div><!-- 줄거리 들어갈 공간 끝 -->
@@ -267,11 +271,20 @@
 				</div><!-- 관련영화 끝 -->
 				
 			</div><!-- 출연진 줄거리 관련영화 끝 -->
+			
+		
 	</div>
-	
-	
-	
-	<div class="carousel-reviews broun-block">
+</div>
+<!-- --------------------------------------------------------------------- -->
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" >
+
+
+<div class="container">
+	<div class="row">
+		<p class="detail-infos_subheading">영화리뷰</p>
+	</div>
+</div>
+<div class="carousel-reviews broun-block">
     <div class="container">
         <div class="row">
             <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
@@ -280,9 +293,9 @@
                     <div class="item active">
                 	    <div class="col-md-4 col-sm-6">
         				    <div class="block-text rel zmin">
-						        <a title="" href="#">Hercules</a>
+						        <a title="" href="#">Joker</a>
 							    <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
-						        <p>Never before has there been a good film portrayal of ancient Greece's favourite myth. So why would Hollywood start now? This latest attempt at bringing the son of Zeus to the big screen is brought to us by X-Men: The last Stand director Brett Ratner. If the name of the director wasn't enough to dissuade ...</p>
+						        <p>착하게 사는것은 높은 계단을 오르는것과 같지만 포기하고 내려갈때는 너무나도 빠르고 즐겁다.</p>
 							    <ins class="ab zmin sprite sprite-i-triangle block"></ins>
 					        </div>
 							<div class="person-text rel">
@@ -293,9 +306,9 @@
 						</div>
             			<div class="col-md-4 col-sm-6 hidden-xs">
 						    <div class="block-text rel zmin">
-						        <a title="" href="#">The Purge: Anarchy</a>
+						        <a title="" href="#">가상 보통의 연애</a>
 							    <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
-        						<p>The 2013 movie "The Purge" left a bad taste in all of our mouths as nothing more than a pseudo-slasher with a hamfisted plot, poor pacing, and a desperate attempt at "horror." Upon seeing the first trailer for "The Purge: Anarchy," my first and most immediate thought was "we really don't need another one of these."  </p>
+        						<p>2012년 건축학개론을 보며 내 10대시절의 첫사랑의 향기를 느꼈다면, 2019년 가장보통의연애를 보며 내 현재 30대 사랑을 볼수있다.. 실제로 나도 같은 직장을 다니며 함께 술을 먹던 술 친구가 이젠 아내가 되어 지금 우리의 모습을 돌아보게 된다.. 왜그랬을까...아아!!! 아!!.. 2012년에 보았던 순애보가 2019년엔 현실의 사랑으로 녹아 내 가슴으로 들어온다.
 					            <ins class="ab zmin sprite sprite-i-triangle block"></ins>
 				            </div>
 							<div class="person-text rel">
@@ -306,9 +319,9 @@
 						</div>
 						<div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
 							<div class="block-text rel zmin">
-								<a title="" href="#">Planes: Fire & Rescue</a>
+								<a title="" href="#">퍼팩트맨</a>
 								<div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
-    							<p>What a funny and entertaining film! I did not know what to expect, this is the fourth film in this vehicle's universe with the two Cars movies and then the first Planes movie. I was wondering if maybe Disney pushed it a little bit. However, Planes: Fire and Rescue is an entertaining film that is a fantastic sequel in this magical franchise. </p>
+    							<p>영웅본색이 반은 살렸다킬링타임 영화로 손색이없다</p>
 								<ins class="ab zmin sprite sprite-i-triangle block"></ins>
 							</div>
 							<div class="person-text rel">
@@ -411,8 +424,6 @@
         </div>
     </div>
 </div>
-</div>
-
-
-
-
+	
+	
+	
