@@ -248,7 +248,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
+              <div class="modal-body" >
                 <!-- Project Details Go Here -->
                 <h5>로그인</h5>
                 <input type="text" placeholder="아이디" class="form group form-control"/>
