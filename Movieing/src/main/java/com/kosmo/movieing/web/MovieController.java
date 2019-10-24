@@ -38,4 +38,10 @@ public class MovieController {
 	public String moviePopular() {
 		return "movie/list/Popular.tiles";
 	}
+	
+	
+	@RequestMapping("/Movieing/Movie/SearchResult.mov")
+	public String searchResult() {
+		return "movie/list/SearchResult.tiles";
+	}
 }
