@@ -121,68 +121,88 @@ $(function() {
 	</div>
     	<div class="row" style="margin-top: 20px" >
 		<div class="col-md-2 col-sm-6 movie-poster" >
-		 <img class="movie"  src="http://placehold.it/230x300"  alt=""/>
+		<a href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
+		 <img class="movie"  src="http://placehold.it/230x300"  alt=""/></a>
+		 
     	</div> 
     	<div class="col-md-2 col-sm-6 movie-poster">
-		 <img class="movie"  src="http://placehold.it/230x300"  alt=""/>
+		<a href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
+		 <img class="movie"  src="http://placehold.it/230x300"  alt=""/></a>
     	</div> 
     	<div class="col-md-2 col-sm-6 movie-poster">
-		 <img class="movie"  src="http://placehold.it/230x300"  alt=""/>
+		<a href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
+		 <img class="movie"  src="http://placehold.it/230x300"  alt=""/></a>
     	</div> 
     	<div class="col-md-2 col-sm-6 movie-poster">
-		 <img class="movie"  src="http://placehold.it/230x300"  alt=""/>
+		<a href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
+		 <img class="movie"  src="http://placehold.it/230x300"  alt=""/></a>
     	</div> 
     	<div class="col-md-2 col-sm-6 movie-poster">
-		 <img class="movie"  src="http://placehold.it/230x300"  alt=""/>
+		<a href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
+		 <img class="movie"  src="http://placehold.it/230x300"  alt=""/></a>
     	</div> 
     	<div class="col-md-2 col-sm-6 movie-poster">
-		 <img class="movie"  src="http://placehold.it/230x300"  alt=""/>
+		<a href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
+		 <img class="movie"  src="http://placehold.it/230x300"  alt=""/></a>
     	</div> 
   	</div>
   	
   	<div class="row" style="margin-top: 20px" >
 		<div class="col-md-2 col-sm-6 movie-poster">
-		 <img class="movie1"  src="http://placehold.it/230x300"  alt=""/>
+		<a href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
+		 <img class="movie1"  src="http://placehold.it/230x300"  alt=""/></a>
     	</div>
     	<div class="col-md-2 col-sm-6 movie-poster">
-		 <img class="movie1"  src="http://placehold.it/230x300"  alt=""/>
+		<a href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
+		 <img class="movie1"  src="http://placehold.it/230x300"  alt=""/></a>
     	</div> 
     	<div class="col-md-2 col-sm-6 movie-poster">
-		 <img class="movie1"  src="http://placehold.it/230x300"  alt=""/>
+			<a href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
+		 <img class="movie1"  src="http://placehold.it/230x300"  alt=""/></a>
     	</div>  
     	<div class="col-md-2 col-sm-6 movie-poster">
-		 <img class="movie1"  src="http://placehold.it/230x300"  alt=""/>
+			<a href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
+		 <img class="movie1"  src="http://placehold.it/230x300"  alt=""/></a>
     	</div> 
     	<div class="col-md-2 col-sm-6 movie-poster">
-		 <img class="movie1"  src="http://placehold.it/230x300"  alt=""/>
+			<a href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
+		 <img class="movie1"  src="http://placehold.it/230x300"  alt=""/></a>
     	</div> 
     	<div class="col-md-2 col-sm-6 movie-poster">
-		 <img class="movie1"  src="http://placehold.it/230x300"  alt=""/>
+			<a href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
+		 <img class="movie1"  src="http://placehold.it/230x300"  alt=""/></a>
     	</div> 
     
   	</div>
   	
   	<div class="row" style="margin-top: 20px" >
 		<div class="col-md-2 col-sm-6 movie-poster">
-		 <img class="movie2"  src="http://placehold.it/230x300"  alt=""/>
+		 	<a href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
+		 <img class="movie2"  src="http://placehold.it/230x300"  alt=""/></a>
     	</div>
     	<div class="col-md-2 col-sm-6 movie-poster">
-		 <img class="movie2"  src="http://placehold.it/230x300"  alt=""/>
+			<a href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
+		 <img class="movie2"  src="http://placehold.it/230x300"  alt=""/></a>
     	</div> 
     	<div class="col-md-2 col-sm-6 movie-poster">
-		 <img class="movie2"  src="http://placehold.it/230x300"  alt=""/>
+			<a href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
+		 <img class="movie2"  src="http://placehold.it/230x300"  alt=""/></a>
     	</div>  
     	<div class="col-md-2 col-sm-6 movie-poster">
-		 <img class="movie2"  src="http://placehold.it/230x300"  alt=""/>
+			<a href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
+		 <img class="movie2"  src="http://placehold.it/230x300"  alt=""/></a>
     	</div> 
     	<div class="col-md-2 col-sm-6 movie-poster">
-		 <img class="movie2"  src="http://placehold.it/230x300"  alt=""/>
+		 <a href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
+		 <img class="movie2"  src="http://placehold.it/230x300"  alt=""/></a>
     	</div> 
     	<div class="col-md-2 col-sm-6 movie-poster">
-		 <img class="movie2"  src="http://placehold.it/230x300"  alt=""/>
+		<a href="<c:url value='/Movieing/Movie/MovieDetails.mov'/>">
+		 <img class="movie2"  src="http://placehold.it/230x300"  alt=""/></a>
     	</div> 
     
   	</div>
+  	
   	
   
   
