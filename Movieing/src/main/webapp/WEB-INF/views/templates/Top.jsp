@@ -61,7 +61,7 @@
             <div class="input-group col-md-12">
                <input type="text" class="form-control input-lg"
                   placeholder="검색어를 입력하세요" /> <span class="input-group-btn">
-                  <button class="btn btn-info btn-lg" type="button">
+                  <button class="btn btn-info btn-lg" type="button" onclick="location.href='<c:url value='/Movieing/Movie/SearchResult.mov'/>' ">
                      <img src="<c:url value='/resources/img/search.png'/>" alt="검색" />
                   </button>
                </span>
