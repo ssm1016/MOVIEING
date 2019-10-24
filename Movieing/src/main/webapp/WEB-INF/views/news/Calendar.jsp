@@ -61,7 +61,7 @@
 
 <style TYPE="text/css">
 body {
-	padding-top: 100px;
+	padding-top: 150px;
 	scrollbar-face-color: #F6F6F6;
 	scrollbar-highlight-color: #bbbbbb;
 	scrollbar-3dlight-color: #FFFFFF;
